@@ -1,4 +1,4 @@
-# ShopAssist AI
+﻿# ShopAssist AI
 
 ShopAssist AI is a conversational retail sales agent for a Phong Vu-style electronics shopping experience. It helps customers describe what they need in natural language, then follows an agentic flow:
 
@@ -143,16 +143,23 @@ Open:
 http://localhost:5173
 ```
 
+
+## Deployment Status
+
+Frontend production URL: https://frontend-irrffcr4t-hunny-17s-projects.vercel.app
+
+Backend status: Local/demo backend for now. Public AWS Lambda deployment needs AWS credentials, Bedrock Agent IDs, and Supabase environment variables.
+
 ## Demo Queries
 
 Try these Retail Track flows:
 
 ```text
-Mình cần laptop gaming tầm 20-25 triệu, chơi game nặng được
-So sánh ASUS TUF với MSI Katana cho mình
-MSI này còn hàng không? Có deal gì không?
-Có chuột wireless nào dưới 700k dùng văn phòng ổn không?
-Mình hay làm việc ban đêm, cần màn hình không hại mắt
+MÃ¬nh cáº§n laptop gaming táº§m 20-25 triá»‡u, chÆ¡i game náº·ng Ä‘Æ°á»£c
+So sÃ¡nh ASUS TUF vá»›i MSI Katana cho mÃ¬nh
+MSI nÃ y cÃ²n hÃ ng khÃ´ng? CÃ³ deal gÃ¬ khÃ´ng?
+CÃ³ chuá»™t wireless nÃ o dÆ°á»›i 700k dÃ¹ng vÄƒn phÃ²ng á»•n khÃ´ng?
+MÃ¬nh hay lÃ m viá»‡c ban Ä‘Ãªm, cáº§n mÃ n hÃ¬nh khÃ´ng háº¡i máº¯t
 ```
 
 ## Verification
@@ -194,3 +201,4 @@ Not yet production-integrated:
 - Real checkout/payment flow
 - Production Bedrock Knowledge Base ingestion pipeline
 - Auth/admin dashboard
+

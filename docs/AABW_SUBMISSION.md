@@ -1,4 +1,4 @@
-# ShopAssist AI AABW Submission
+﻿# ShopAssist AI AABW Submission
 
 ## Project Name
 
@@ -69,7 +69,7 @@ Agentic behaviors:
 Example query:
 
 ```text
-Mình cần laptop gaming tầm 20-25 triệu, chơi game nặng được
+MÃ¬nh cáº§n laptop gaming táº§m 20-25 triá»‡u, chÆ¡i game náº·ng Ä‘Æ°á»£c
 ```
 
 Agent flow:
@@ -159,7 +159,7 @@ The MVP data starts from:
 User:
 
 ```text
-Mình cần laptop gaming tầm 20-25 triệu, chơi game nặng được
+MÃ¬nh cáº§n laptop gaming táº§m 20-25 triá»‡u, chÆ¡i game náº·ng Ä‘Æ°á»£c
 ```
 
 Expected:
@@ -173,7 +173,7 @@ Expected:
 User:
 
 ```text
-So sánh ASUS TUF với MSI Katana cho mình
+So sÃ¡nh ASUS TUF vá»›i MSI Katana cho mÃ¬nh
 ```
 
 Expected:
@@ -186,7 +186,7 @@ Expected:
 User:
 
 ```text
-MSI Katana còn hàng không? Có deal gì không?
+MSI Katana cÃ²n hÃ ng khÃ´ng? CÃ³ deal gÃ¬ khÃ´ng?
 ```
 
 Expected:
@@ -199,7 +199,7 @@ Expected:
 User or click:
 
 ```text
-Lấy cái MSI này đi
+Láº¥y cÃ¡i MSI nÃ y Ä‘i
 ```
 
 Expected:
@@ -256,20 +256,8 @@ ShopAssist AI makes the AI central to the commerce workflow. The agent is respon
 
 ## Submission Links
 
-Live demo URL:
+Live demo URL: https://frontend-irrffcr4t-hunny-17s-projects.vercel.app
 
-```text
-TBD
-```
+GitHub repository: Pending GitHub auth/repo creation
 
-GitHub repository:
-
-```text
-TBD
-```
-
-Demo video:
-
-```text
-TBD
-```
+Demo video: Pending 3-minute screen recording
