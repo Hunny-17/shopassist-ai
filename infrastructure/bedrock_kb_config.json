@@ -1,0 +1,47 @@
+{
+  "project": "ShopAssist AI",
+  "purpose": "Bedrock Knowledge Base configuration placeholder for product guides, warranty policy, return policy, compatibility notes, and retail FAQs.",
+  "status": "deploy-ready-template",
+  "region": "ap-southeast-1",
+  "embedding_model": {
+    "provider": "amazon",
+    "model_id": "amazon.titan-embed-text-v2:0"
+  },
+  "knowledge_base": {
+    "name": "shopassist-ai-retail-kb",
+    "description": "Unstructured support knowledge for the ShopAssist AI retail agent. Structured product price, stock, tags, and promotions remain in Supabase.",
+    "data_sources": [
+      {
+        "name": "product-buying-guides",
+        "type": "s3",
+        "s3_prefix": "s3://REPLACE_WITH_BUCKET/shopassist-ai/kb/product-guides/"
+      },
+      {
+        "name": "policies-and-faq",
+        "type": "s3",
+        "s3_prefix": "s3://REPLACE_WITH_BUCKET/shopassist-ai/kb/policies/"
+      }
+    ]
+  },
+  "retrieval": {
+    "number_of_results": 5,
+    "override_search_type": "HYBRID"
+  },
+  "agent_integration": {
+    "agent_name": "shopassist-ai-agent",
+    "model": "anthropic.claude-3-5-sonnet-20240620-v1:0",
+    "action_groups": [
+      "search_products",
+      "get_product_detail",
+      "compare_products",
+      "check_stock_and_promotion",
+      "get_recommendations",
+      "add_to_cart"
+    ]
+  },
+  "notes": [
+    "Do not store Supabase service-role keys or AWS secrets in this file.",
+    "Replace S3 bucket placeholders when creating the real Bedrock Knowledge Base.",
+    "The MVP can run with the backend fallback when BEDROCK_AGENT_ID or BEDROCK_AGENT_ALIAS_ID is missing."
+  ]
+}

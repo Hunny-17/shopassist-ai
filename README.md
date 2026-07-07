@@ -30,6 +30,7 @@ backend/app/              FastAPI backend, agent wrapper, tools, DB queries
 data/                     MVP product and promotion data + seed script
 frontend/                 React chat and product-card UI
 docs/                     Demo and submission package
+infrastructure/           Supabase schema, AWS Lambda SAM template, Bedrock KB config
 supabase_schema.sql       Supabase tables and indexes
 env.example               Environment variable template
 requirements.txt          Backend Python dependencies
@@ -68,12 +69,20 @@ If Bedrock IDs are missing, the backend keeps `/api/v1/chat` usable through a cl
 pip install -r requirements.txt
 ```
 
+`backend/requirements.txt` is also provided for AWS SAM packaging, while the root `requirements.txt` remains the local setup entrypoint.
+
 ### 3. Create Supabase schema
 
 Run the SQL in Supabase:
 
 ```text
 supabase_schema.sql
+```
+
+The same schema is mirrored at:
+
+```text
+infrastructure/supabase_schema.sql
 ```
 
 It creates:
@@ -150,7 +159,13 @@ Frontend production URL: https://frontend-irrffcr4t-hunny-17s-projects.vercel.ap
 
 GitHub repository: https://github.com/Hunny-17/shopassist-ai
 
-Backend status: Local/demo backend for now. Public AWS Lambda deployment needs AWS credentials, Bedrock Agent IDs, and Supabase environment variables.
+Backend status: Local/demo backend for now. The backend is Lambda-ready via Mangum and has an AWS SAM template at `infrastructure/aws_lambda_template.yaml`. Public AWS Lambda deployment still needs AWS credentials, Bedrock Agent IDs, and Supabase environment variables.
+
+Deployment notes:
+
+```text
+docs/DEPLOYMENT.md
+```
 
 ## Demo Queries
 
@@ -203,5 +218,6 @@ Not yet production-integrated:
 - Real checkout/payment flow
 - Production Bedrock Knowledge Base ingestion pipeline
 - Auth/admin dashboard
+- Public AWS Lambda/API Gateway backend URL
 
 

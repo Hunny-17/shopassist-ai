@@ -119,7 +119,7 @@ Safety layer for off-topic blocking and controlled retail assistant behavior.
 
 ### AWS Lambda
 
-Backend deployment target. The FastAPI app is Lambda-ready through Mangum.
+Backend deployment target. The FastAPI app is Lambda-ready through Mangum, and the repository includes an AWS SAM template for API Gateway + Lambda deployment at `infrastructure/aws_lambda_template.yaml`.
 
 ### Amazon S3
 
@@ -240,6 +240,8 @@ Completed:
 - React chat UI
 - Product cards, stock badges, comparison table, cart drawer
 - Integration smoke test for API response shapes and CORS
+- AWS Lambda deploy-ready template through SAM
+- Supabase reset schema mirrored under `infrastructure/`
 
 Not included yet:
 
@@ -248,6 +250,7 @@ Not included yet:
 - Auth
 - Admin catalog management
 - Live Bedrock Knowledge Base ingestion job
+- Public AWS Lambda deployment URL
 - Production analytics dashboard
 
 ## Differentiation

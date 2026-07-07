@@ -1,0 +1,102 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Transform: AWS::Serverless-2016-10-31
+Description: ShopAssist AI FastAPI backend on AWS Lambda and API Gateway.
+
+Parameters:
+  Environment:
+    Type: String
+    Default: production
+    AllowedValues:
+      - development
+      - staging
+      - production
+  FrontendUrl:
+    Type: String
+    Description: Allowed frontend origin for CORS, for example the Vercel URL.
+  AwsRegion:
+    Type: String
+    Default: ap-southeast-1
+  BedrockAgentId:
+    Type: String
+    Default: ""
+  BedrockAgentAliasId:
+    Type: String
+    Default: ""
+  BedrockKbId:
+    Type: String
+    Default: ""
+  SupabaseUrl:
+    Type: String
+    NoEcho: true
+  SupabaseServiceRoleKey:
+    Type: String
+    NoEcho: true
+
+Globals:
+  Function:
+    Runtime: python3.11
+    Timeout: 30
+    MemorySize: 512
+    Architectures:
+      - x86_64
+    Environment:
+      Variables:
+        ENVIRONMENT: !Ref Environment
+        FRONTEND_URL: !Ref FrontendUrl
+        AWS_REGION: !Ref AwsRegion
+        BEDROCK_AGENT_ID: !Ref BedrockAgentId
+        BEDROCK_AGENT_ALIAS_ID: !Ref BedrockAgentAliasId
+        BEDROCK_KB_ID: !Ref BedrockKbId
+        SUPABASE_URL: !Ref SupabaseUrl
+        SUPABASE_SERVICE_ROLE_KEY: !Ref SupabaseServiceRoleKey
+        LOG_LEVEL: INFO
+
+Resources:
+  ShopAssistApi:
+    Type: AWS::Serverless::HttpApi
+    Properties:
+      CorsConfiguration:
+        AllowOrigins:
+          - !Ref FrontendUrl
+        AllowMethods:
+          - GET
+          - POST
+          - OPTIONS
+        AllowHeaders:
+          - Content-Type
+          - Authorization
+        AllowCredentials: true
+
+  ShopAssistBackendFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: shopassist-ai-backend
+      CodeUri: ../backend
+      Handler: app.main.handler
+      Policies:
+        - Statement:
+            - Effect: Allow
+              Action:
+                - bedrock:InvokeAgent
+              Resource: "*"
+      Events:
+        Root:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref ShopAssistApi
+            Path: /
+            Method: ANY
+        Proxy:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref ShopAssistApi
+            Path: /{proxy+}
+            Method: ANY
+
+Outputs:
+  ApiUrl:
+    Description: Public API Gateway URL for VITE_API_URL.
+    Value: !Sub "https://${ShopAssistApi}.execute-api.${AWS::Region}.amazonaws.com"
+  BackendFunctionName:
+    Description: Lambda function name.
+    Value: !Ref ShopAssistBackendFunction
