@@ -258,6 +258,7 @@ ShopAssist AI makes the AI central to the commerce workflow. The agent is respon
 
 Live demo URL: https://frontend-irrffcr4t-hunny-17s-projects.vercel.app
 
-GitHub repository: Pending GitHub auth/repo creation
+GitHub repository: https://github.com/Hunny-17/shopassist-ai
 
 Demo video: Pending 3-minute screen recording
+

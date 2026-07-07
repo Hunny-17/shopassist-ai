@@ -148,6 +148,8 @@ http://localhost:5173
 
 Frontend production URL: https://frontend-irrffcr4t-hunny-17s-projects.vercel.app
 
+GitHub repository: https://github.com/Hunny-17/shopassist-ai
+
 Backend status: Local/demo backend for now. Public AWS Lambda deployment needs AWS credentials, Bedrock Agent IDs, and Supabase environment variables.
 
 ## Demo Queries
@@ -201,4 +203,5 @@ Not yet production-integrated:
 - Real checkout/payment flow
 - Production Bedrock Knowledge Base ingestion pipeline
 - Auth/admin dashboard
+
 
