@@ -163,6 +163,8 @@ GitHub repository: https://github.com/Hunny-17/shopassist-ai
 
 Backend status: Deployed on AWS Lambda + API Gateway through AWS SAM. The public API is configured as `VITE_API_URL` for the Vercel frontend.
 
+AWS Bedrock Agent status: Agent resource and production alias are configured for the backend. If Bedrock runtime is unavailable because of account model-access or token-quota limits, the backend gracefully falls back to Supabase catalog tools so the retail flow and product cards remain usable.
+
 Deployment notes:
 
 ```text

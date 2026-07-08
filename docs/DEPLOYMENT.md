@@ -9,6 +9,15 @@ Frontend: https://frontend-iota-green-31.vercel.app
 Backend:  https://1ldl7jw5ng.execute-api.ap-southeast-1.amazonaws.com
 ```
 
+Bedrock Agent:
+
+```text
+Agent ID: SR8SCAOB8N
+Alias ID: EOFOCXP1FI
+```
+
+The Lambda environment is configured with this agent and alias. If the AWS account hits Bedrock model-access or daily token-quota limits, `/api/v1/chat` falls back to Supabase-backed catalog tools while keeping the same response shape.
+
 ## Frontend
 
 The frontend deploy target is Vercel.

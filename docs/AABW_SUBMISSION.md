@@ -105,6 +105,8 @@ Frontend result:
 
 Core AI orchestration layer. Bedrock Agents select and coordinate tools for product search, detail lookup, comparison, stock/promotion checks, recommendations, and cart actions.
 
+The deployed backend is configured with a real Bedrock Agent resource and production alias. The app includes graceful degradation to Supabase-backed catalog tools when Bedrock runtime is blocked by account model-access or daily token-quota limits.
+
 ### Claude Sonnet 3.5 via Amazon Bedrock
 
 Language understanding and response generation model used by the agent.

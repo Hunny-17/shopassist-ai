@@ -42,10 +42,11 @@ async def invoke_agent(session_id: str, message: str) -> dict[str, Any]:
 
     try:
         response = await asyncio.to_thread(_invoke_bedrock_sync, settings, session_id, message)
+        product_enrichment = await get_product_enrichment(message)
         return {
-            "response": response,
+            "response": merge_bedrock_response_with_products(response, product_enrichment),
             "session_id": session_id,
-            "products": [],
+            "products": product_enrichment.get("products", []),
             "comparison": None,
             "cart_update": None,
             "source": "bedrock_agent",
@@ -78,6 +79,28 @@ def _invoke_bedrock_sync(settings: dict[str, str | None], session_id: str, messa
             completion += event["chunk"]["bytes"].decode()
 
     return completion
+
+
+async def get_product_enrichment(message: str) -> dict[str, Any]:
+    filters = infer_filters_from_message(message)
+    result = await search_products(**filters)
+    if not result.get("success"):
+        return {"products": []}
+
+    return {
+        "products": result.get("data", {}).get("products", []),
+        "filters_applied": result.get("data", {}).get("filters_applied", {}),
+    }
+
+
+def merge_bedrock_response_with_products(response: str, enrichment: dict[str, Any]) -> str:
+    products = enrichment.get("products", [])
+    if not products:
+        return response
+
+    names = ", ".join(product["name"] for product in products[:3])
+    product_note = f"\n\nMình đã lọc được {len(products)} sản phẩm phù hợp từ Supabase: {names}."
+    return f"{response.strip()}{product_note}"
 
 
 async def fallback_agent_response(session_id: str | None, message: str) -> dict[str, Any]:
