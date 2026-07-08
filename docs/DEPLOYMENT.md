@@ -1,6 +1,13 @@
 # Deployment Notes
 
-This project is ready for local demo and has deploy-ready artifacts for the AWS backend path.
+This project is ready for local demo and has a deployed AWS backend path.
+
+Production URLs:
+
+```text
+Frontend: https://frontend-iota-green-31.vercel.app
+Backend:  https://1ldl7jw5ng.execute-api.ap-southeast-1.amazonaws.com
+```
 
 ## Frontend
 
@@ -9,12 +16,12 @@ The frontend deploy target is Vercel.
 Required Vercel environment variables:
 
 ```text
-VITE_API_URL=https://YOUR_BACKEND_API_URL
+VITE_API_URL=https://1ldl7jw5ng.execute-api.ap-southeast-1.amazonaws.com
 VITE_SUPABASE_URL=https://YOUR_SUPABASE_PROJECT.supabase.co
 VITE_SUPABASE_ANON_KEY=YOUR_SUPABASE_ANON_KEY
 ```
 
-`VITE_API_URL` must point to a public backend URL. If it is still `http://localhost:8000`, the Vercel deployment can build but cannot call the backend from another machine.
+`VITE_API_URL` must point to the public API Gateway URL. If it is still `http://localhost:8000`, the Vercel deployment can build but cannot call the backend from another machine.
 
 ## Backend
 

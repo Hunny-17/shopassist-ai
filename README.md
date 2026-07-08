@@ -155,11 +155,13 @@ http://localhost:5173
 
 ## Deployment Status
 
-Frontend production URL: https://frontend-irrffcr4t-hunny-17s-projects.vercel.app
+Frontend production URL: https://frontend-iota-green-31.vercel.app
+
+Backend production API: https://1ldl7jw5ng.execute-api.ap-southeast-1.amazonaws.com
 
 GitHub repository: https://github.com/Hunny-17/shopassist-ai
 
-Backend status: Local/demo backend for now. The backend is Lambda-ready via Mangum and has an AWS SAM template at `infrastructure/aws_lambda_template.yaml`. Public AWS Lambda deployment still needs AWS credentials, Bedrock Agent IDs, and Supabase environment variables.
+Backend status: Deployed on AWS Lambda + API Gateway through AWS SAM. The public API is configured as `VITE_API_URL` for the Vercel frontend.
 
 Deployment notes:
 
@@ -200,6 +202,13 @@ curl http://localhost:8000/health
 curl http://localhost:8000/api/v1/products
 ```
 
+Production smoke endpoints:
+
+```bash
+curl https://1ldl7jw5ng.execute-api.ap-southeast-1.amazonaws.com/health
+curl https://1ldl7jw5ng.execute-api.ap-southeast-1.amazonaws.com/api/v1/products
+```
+
 ## Current MVP Scope
 
 Implemented:
@@ -218,6 +227,5 @@ Not yet production-integrated:
 - Real checkout/payment flow
 - Production Bedrock Knowledge Base ingestion pipeline
 - Auth/admin dashboard
-- Public AWS Lambda/API Gateway backend URL
 
 

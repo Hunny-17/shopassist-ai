@@ -10,6 +10,7 @@ dist/
 frontend/dist/
 .vercel/
 frontend/.vercel/
+.aws-sam/
 __pycache__/
 *.py[cod]
 .pytest_cache/

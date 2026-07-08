@@ -43,7 +43,6 @@ Globals:
       Variables:
         ENVIRONMENT: !Ref Environment
         FRONTEND_URL: !Ref FrontendUrl
-        AWS_REGION: !Ref AwsRegion
         BEDROCK_AGENT_ID: !Ref BedrockAgentId
         BEDROCK_AGENT_ALIAS_ID: !Ref BedrockAgentAliasId
         BEDROCK_KB_ID: !Ref BedrockKbId
