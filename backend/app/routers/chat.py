@@ -67,6 +67,7 @@ async def chat(request_body: ChatRequest, request: Request):
             products=agent_result.get("products", []),
             comparison=agent_result.get("comparison"),
             cart_update=agent_result.get("cart_update"),
+            tool_trace=agent_result.get("tool_trace", []),
         )
 
         await update_chat_session(
@@ -82,6 +83,7 @@ async def chat(request_body: ChatRequest, request: Request):
             event_payload={
                 "source": agent_result.get("source"),
                 "product_count": len(agent_result.get("products", [])),
+                "tool_trace": agent_result.get("tool_trace", []),
             },
         )
 

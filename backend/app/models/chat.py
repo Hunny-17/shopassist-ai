@@ -20,6 +20,7 @@ class ChatMessage(BaseModel):
     products: list[dict[str, Any]] = Field(default_factory=list)
     comparison: dict[str, Any] | None = None
     cart_update: dict[str, Any] | None = None
+    tool_trace: list[dict[str, Any]] = Field(default_factory=list)
     timestamp: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
 
 

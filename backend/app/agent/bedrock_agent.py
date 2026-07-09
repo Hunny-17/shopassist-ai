@@ -19,6 +19,8 @@ from app.agent.tools import (
 
 logger = logging.getLogger(__name__)
 
+_SESSION_MEMORY: dict[str, dict[str, Any]] = {}
+
 
 def _bedrock_settings() -> dict[str, str | None]:
     load_dotenv()
@@ -56,6 +58,7 @@ async def invoke_agent(session_id: str, message: str) -> dict[str, Any]:
             "products": product_enrichment.get("products", []),
             "comparison": None,
             "cart_update": None,
+            "tool_trace": build_tool_trace("bedrock_agent", "invoke_agent", len(product_enrichment.get("products", []))),
             "source": "bedrock_agent",
         }
     except Exception as error:
@@ -139,6 +142,33 @@ def infer_fallback_intent(message: str) -> str:
         return "cart"
 
     return "search"
+
+
+def build_tool_trace(intent: str, tool_name: str, result_count: int = 0, note: str | None = None) -> list[dict[str, Any]]:
+    trace = [
+        {"step": "intent_router", "output": intent},
+        {"step": "tool_selection", "tool": tool_name},
+        {"step": "tool_result", "result_count": result_count},
+    ]
+    if note:
+        trace.append({"step": "note", "message": note})
+    return trace
+
+
+def remember_session_products(session_id: str, products: list[dict[str, Any]]) -> None:
+    if not products:
+        return
+
+    _SESSION_MEMORY[session_id] = {
+        "last_product": products[0],
+        "last_products": products[:5],
+    }
+
+
+def get_recent_session_products(session_id: str, limit: int = 3) -> list[dict[str, Any]]:
+    memory = _SESSION_MEMORY.get(session_id, {})
+    products = memory.get("last_products") or []
+    return products[:limit]
 
 
 def normalize_text(value: str) -> str:
@@ -241,6 +271,7 @@ async def fallback_search_response(active_session_id: str, message: str) -> dict
         if products:
             names = ", ".join(product["name"] for product in products[:3])
             content = f"{content}\n\nMình tìm được {len(products)} sản phẩm phù hợp: {names}."
+            remember_session_products(active_session_id, products)
         else:
             content = f"{content}\n\nMình chưa tìm thấy sản phẩm khớp bộ lọc hiện tại."
     else:
@@ -252,6 +283,7 @@ async def fallback_search_response(active_session_id: str, message: str) -> dict
         "products": products,
         "comparison": None,
         "cart_update": None,
+        "tool_trace": build_tool_trace("search", "search_products", len(products)),
         "source": "local_fallback",
     }
 
@@ -274,12 +306,14 @@ async def fallback_compare_response(active_session_id: str, message: str) -> dic
             "products": products,
             "comparison": None,
             "cart_update": None,
+            "tool_trace": build_tool_trace("compare", "compare_products", len(products), "not_enough_products"),
             "source": "local_fallback_compare",
         }
 
     comparison_result = await compare_products([product["id"] for product in products[:3]])
     comparison = comparison_result.get("data") if comparison_result.get("success") else None
     names = " và ".join(product["name"] for product in products[:2])
+    remember_session_products(active_session_id, products)
 
     return {
         "response": (
@@ -291,6 +325,7 @@ async def fallback_compare_response(active_session_id: str, message: str) -> dic
         "products": [],
         "comparison": comparison,
         "cart_update": None,
+        "tool_trace": build_tool_trace("compare", "compare_products", len(products)),
         "source": "local_fallback_compare",
     }
 
@@ -309,6 +344,7 @@ async def fallback_stock_promo_response(active_session_id: str, message: str) ->
             "products": [],
             "comparison": None,
             "cart_update": None,
+            "tool_trace": build_tool_trace("stock_promo", "check_stock_and_promotion", 0, "product_not_resolved"),
             "source": "local_fallback_stock_promo",
         }
 
@@ -317,6 +353,7 @@ async def fallback_stock_promo_response(active_session_id: str, message: str) ->
     stock_data = stock_result.get("data", {}) if stock_result.get("success") else {}
     promotions = stock_data.get("promotions", [])
     promo_text = promotions[0]["label"] if promotions else "chưa có khuyến mãi active trong dữ liệu demo"
+    remember_session_products(active_session_id, products)
 
     return {
         "response": (
@@ -328,12 +365,24 @@ async def fallback_stock_promo_response(active_session_id: str, message: str) ->
         "products": products,
         "comparison": None,
         "cart_update": None,
+        "tool_trace": build_tool_trace("stock_promo", "check_stock_and_promotion", len(products)),
         "source": "local_fallback_stock_promo",
     }
 
 
 async def fallback_cart_response(active_session_id: str, message: str) -> dict[str, Any]:
-    products = await resolve_products_from_message(message, limit=1)
+    normalized_message = normalize_text(message)
+    points_to_recent_product = any(
+        phrase in normalized_message
+        for phrase in ["cai nay", "san pham nay", "may nay", "mau nay", "this one", "this"]
+    )
+    products = get_recent_session_products(active_session_id, limit=1) if points_to_recent_product else []
+
+    if not products:
+        products = await resolve_products_from_message(message, limit=1)
+
+    if not products:
+        products = get_recent_session_products(active_session_id, limit=1)
 
     if not products:
         search = await search_products(**infer_filters_from_message(message))
@@ -349,6 +398,7 @@ async def fallback_cart_response(active_session_id: str, message: str) -> dict[s
             "products": [],
             "comparison": None,
             "cart_update": None,
+            "tool_trace": build_tool_trace("cart", "add_to_cart", 0, "product_not_resolved"),
             "source": "local_fallback_cart",
         }
 
@@ -367,6 +417,7 @@ async def fallback_cart_response(active_session_id: str, message: str) -> dict[s
         "products": [cart_data.get("product") or product],
         "comparison": None,
         "cart_update": cart_data.get("cart_update"),
+        "tool_trace": build_tool_trace("cart", "add_to_cart", 1),
         "source": "local_fallback_cart",
     }
 
@@ -385,7 +436,7 @@ async def resolve_products_from_message(message: str, limit: int = 3) -> list[di
     tokens = [
         token
         for token in re.split(r"[^a-z0-9]+", normalized_message)
-        if len(token) >= 3 and token not in {"cho", "minh", "voi", "nay", "con", "hang", "khong"}
+        if len(token) >= 3 and token not in {"cho", "minh", "voi", "nay", "con", "hang", "khong", "lay", "cai"}
     ]
 
     def match_score(product: dict[str, Any]) -> int:
