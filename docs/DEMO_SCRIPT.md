@@ -6,17 +6,17 @@ Secondary qualifier: Built with AWS
 
 ## Demo Goal
 
-Show that ShopAssist AI is not a generic chatbot. It is an agentic retail assistant that understands customer intent, selects tools, queries structured product data in Supabase, and responds with useful product cards inside the chat.
+Show that ShopAssist AI is not a generic chatbot. It is an agentic retail assistant that understands customer intent, selects retail tools, queries structured product data in Supabase, and responds with useful product cards inside the chat.
 
 ## Pre-Demo Checklist
 
-- Backend running: `uvicorn app.main:app --reload`
-- Frontend running: `npm run dev`
-- Frontend open at `http://localhost:5173`
+- Public frontend open: `https://frontend-iota-green-31.vercel.app`
+- Public backend health checked: `https://1ldl7jw5ng.execute-api.ap-southeast-1.amazonaws.com/health`
 - Supabase project seeded with `data/products.json` and `data/promotions.json`
 - Browser zoom set to 100%
 - Backup tab open for Supabase product table if judges ask about data source
 - Keep wording clear: this is MVP/demo data in Supabase, not a live Phong Vu API integration
+- Keep Bedrock wording honest: the deployed backend is configured with a real Bedrock Agent, but current AWS account runtime access is blocked by model-access/quota restrictions, so the demo may use the graceful Supabase tool fallback
 
 ## 0:00-0:25 Opening
 
@@ -40,7 +40,7 @@ Mình cần laptop gaming tầm 20-25 triệu, chơi game nặng được
 
 Say while the response loads:
 
-> The agent parses intent: category is laptop, use case is gaming, budget is 20 to 25 million VND. Then it selects the product search tool, queries Supabase, ranks matching products, and returns structured product cards.
+> The agentic flow parses intent: category is laptop, use case is gaming, budget is 20 to 25 million VND. Then the backend selects the product search flow, queries Supabase, ranks matching products, and returns structured product cards.
 
 Point out:
 
@@ -52,7 +52,7 @@ Point out:
 
 Key line:
 
-> This is the core agentic loop: intent -> tool selection -> Supabase query -> response with product cards.
+> This is the core retail loop: intent -> tool selection -> Supabase query -> response with product cards.
 
 ## 1:10-1:45 Flow 2: Comparison
 
@@ -64,16 +64,11 @@ So sánh ASUS TUF với MSI Katana cho mình
 
 Say:
 
-> In the full Bedrock Agent flow, the agent can select the comparison tool and return a structured comparison table. The frontend is ready to render that table directly inside the chat, highlighting winners by criteria like price or performance.
+> The product comparison path maps this intent to structured product data. The frontend is ready to render a comparison table directly inside the chat, highlighting trade-offs like price, GPU, RAM, storage, screen, and stock.
 
-If the live MVP fallback does not trigger a comparison table, say:
+If the live fallback returns product cards instead of a full comparison table, say:
 
-> For this local MVP run, the comparison table renderer is implemented and wired to the backend response shape. In the Bedrock Agent configuration, this user intent maps to `compare_products`.
-
-Show or explain:
-
-- ComparisonTable supports product columns
-- Rows for price, CPU, RAM, GPU, storage, screen, refresh rate, battery, weight, warranty, stock
+> In this public MVP run, the response still comes from the same backend response shape. The comparison table renderer is implemented and ready for a Bedrock Agent tool call once account runtime access is fully available.
 
 ## 1:45-2:15 Flow 3: Stock and Promotion
 
@@ -85,7 +80,7 @@ MSI Katana còn hàng không? Có deal gì không?
 
 Say:
 
-> Product availability and promotions are not hardcoded in the frontend. They are structured data from Supabase. The agent can call `check_stock_and_promotion`, return stock status and active deals, then the UI displays that as badges.
+> Product availability and promotions are not hardcoded in the frontend. They are structured data from Supabase. The tool flow can check stock status and active deals, then the UI displays that as badges.
 
 Point out:
 
@@ -93,7 +88,7 @@ Point out:
 - Active promotions with date windows
 - Realtime-ready frontend subscription through Supabase anon client
 
-## 2:15-2:40 Flow 4: Add to Cart and Natural Upsell
+## 2:15-2:40 Flow 4: Add to Cart
 
 Click "Thêm" on a product card.
 
@@ -111,7 +106,7 @@ Show:
 
 Say:
 
-> The AI core is AWS Bedrock Agents. It is not an add-on text generator. It orchestrates tools, product search, stock checks, comparison, recommendations, and cart actions. Supabase provides the live structured retail data for this MVP. Next step is replacing demo data with a real retailer catalog API and running an A/B test on conversion.
+> The intended AI core is AWS Bedrock Agents. It is not an add-on text generator: it is the orchestration layer for product search, stock checks, comparison, recommendations, and cart actions. The deployed backend already has a real Bedrock Agent ID and alias configured. Because the current AWS account is blocked by model-access/quota restrictions at runtime, this public demo gracefully falls back to Supabase-backed retail tools while preserving the product-card response shape.
 
 Final one-liner:
 
@@ -129,23 +124,23 @@ Answer:
 
 Answer:
 
-> AWS Bedrock Agents are the AI orchestration core. Claude Sonnet 3.5 handles language understanding and generation through Bedrock, Bedrock Knowledge Bases are planned for product specs and buying guides, Bedrock Guardrails handle safety, and the FastAPI backend is designed for AWS Lambda through Mangum.
+> The backend is publicly deployed on AWS Lambda and API Gateway. AWS Bedrock Agents are configured as the AI orchestration core through a real agent ID and alias. Runtime model calls are currently blocked by account-level Bedrock access/quota restrictions, so the app gracefully falls back to Supabase catalog tools for the public demo.
 
 ### Why agentic instead of a chatbot?
 
 Answer:
 
-> A chatbot replies to text. This agent chooses actions: search products, fetch details, compare items, check stock and promotions, recommend alternatives, and add to cart. The response is structured data rendered as product cards, not just prose.
+> A chatbot replies to text. This agentic design chooses actions: search products, fetch details, compare items, check stock and promotions, recommend alternatives, and add to cart. The response is structured data rendered as product cards, not just prose.
 
-### What happens if Bedrock is not configured locally?
+### What happens if Bedrock runtime is blocked?
 
 Answer:
 
-> The backend has an explicit local fallback so the demo app still runs. The production path is Bedrock Agents with configured agent ID and alias ID.
+> The backend has an explicit fallback so the demo app still runs. The deployed production path is configured with Bedrock Agent ID and alias ID, but if AWS returns account-level access or quota errors, the backend falls back to Supabase catalog tools and preserves the same response shape.
 
 ## Backup Plan
 
-- If Bedrock credentials are missing: use the local fallback and explain the Bedrock wrapper path.
-- If Supabase is unavailable: show the seeded JSON data and explain the schema/query layer.
-- If frontend network fails: use the built UI and describe expected `/api/v1/chat` response shape.
-- If time is short: run only Flow 1 and the cart click, then close with the AWS architecture.
+- If Bedrock runtime returns `Operation not allowed` or quota errors: use the deployed fallback and explain the Bedrock wrapper path
+- If Supabase is unavailable: show the seeded JSON data and explain the schema/query layer
+- If frontend network fails: use the public backend endpoint and describe expected `/api/v1/chat` response shape
+- If time is short: run only Flow 1 and the cart click, then close with the AWS architecture

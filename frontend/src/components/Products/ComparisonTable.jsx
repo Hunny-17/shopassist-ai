@@ -6,16 +6,19 @@ export default function ComparisonTable({ comparison }) {
   if (!comparison?.products?.length || !comparison?.rows?.length) return null
 
   return (
-    <section className="overflow-hidden rounded-xl border border-[#2E2E2E] bg-[#1A1A1A]">
-      <div className="overflow-x-auto">
-        <table className="min-w-full border-collapse text-left text-sm text-white">
-          <thead className="bg-[#242424] text-xs uppercase tracking-normal text-[#888888]">
+    <section className="overflow-hidden rounded-lg border border-[#D6E5F2] bg-white">
+      <div className="border-b border-[#D6E5F2] bg-[#EAF5FF] px-3 py-3">
+        <p className="text-xs font-medium text-[#0B74BD]">So sánh nhanh</p>
+      </div>
+      <div className="scrollbar-light overflow-x-auto">
+        <table className="min-w-full border-collapse text-left text-sm text-[#172033]">
+          <thead className="bg-[#F4F9FD] text-xs text-[#52657A]">
             <tr>
-              <th className="w-32 border-b border-[#2E2E2E] px-3 py-3">Tiêu chí</th>
+              <th className="w-32 border-b border-[#D6E5F2] px-3 py-3">Tiêu chí</th>
               {comparison.products.map((product) => (
                 <th
                   key={product.id}
-                  className="min-w-36 border-b border-[#2E2E2E] px-3 py-3"
+                  className="min-w-36 border-b border-[#D6E5F2] px-3 py-3"
                 >
                   {product.name}
                 </th>
@@ -24,8 +27,8 @@ export default function ComparisonTable({ comparison }) {
           </thead>
           <tbody>
             {comparison.rows.map((row) => (
-              <tr key={row.label} className="border-b border-[#2E2E2E] last:border-b-0">
-                <th className="px-3 py-3 text-xs font-medium text-[#888888]">
+              <tr key={row.label} className="border-b border-[#D6E5F2] last:border-b-0">
+                <th className="px-3 py-3 text-xs font-medium text-[#52657A]">
                   {row.label}
                 </th>
                 {row.values.map((value, index) => (
@@ -33,8 +36,8 @@ export default function ComparisonTable({ comparison }) {
                     key={`${row.label}-${index}`}
                     className={
                       row.winner_index === index
-                        ? "bg-[#E31E24]/10 px-3 py-3 font-mono text-white"
-                        : "px-3 py-3 font-mono text-white"
+                        ? "bg-[#EAF5FF] px-3 py-3 font-mono font-semibold text-[#172033]"
+                        : "px-3 py-3 font-mono text-[#172033]"
                     }
                   >
                     {value}
@@ -46,7 +49,7 @@ export default function ComparisonTable({ comparison }) {
         </table>
       </div>
       {comparison.summary && (
-        <p className="border-t border-[#2E2E2E] px-3 py-3 text-sm text-[#888888]">
+        <p className="border-t border-[#D6E5F2] px-3 py-3 text-sm text-[#3F5366]">
           {comparison.summary}
         </p>
       )}

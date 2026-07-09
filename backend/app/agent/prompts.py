@@ -21,6 +21,5 @@ check_stock_and_promotion, get_recommendations, add_to_cart.
 
 
 FALLBACK_RESPONSE_TEMPLATE = """
-Mình chưa kết nối được Bedrock Agent trong môi trường hiện tại, nên đang dùng fallback backend để tìm dữ liệu sản phẩm có sẵn.
+Mình đang dùng catalog tools và dữ liệu Supabase để lọc sản phẩm phù hợp cho bạn.
 """.strip()
-FALLBACK_RESPONSE_TEMPLATE = "M\u00ecnh \u0111ang d\u00f9ng catalog tools v\u00e0 d\u1eef li\u1ec7u Supabase \u0111\u1ec3 l\u1ecdc s\u1ea3n ph\u1ea9m ph\u00f9 h\u1ee3p cho b\u1ea1n."

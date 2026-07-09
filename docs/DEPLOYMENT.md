@@ -1,12 +1,13 @@
 # Deployment Notes
 
-This project is ready for local demo and has a deployed AWS backend path.
+This project is ready for public demo and has a deployed AWS backend path.
 
 Production URLs:
 
 ```text
 Frontend: https://frontend-iota-green-31.vercel.app
 Backend:  https://1ldl7jw5ng.execute-api.ap-southeast-1.amazonaws.com
+GitHub:   https://github.com/Hunny-17/shopassist-ai
 ```
 
 Bedrock Agent:
@@ -16,7 +17,7 @@ Agent ID: SR8SCAOB8N
 Alias ID: EOFOCXP1FI
 ```
 
-The Lambda environment is configured with this agent and alias. If the AWS account hits Bedrock model-access or daily token-quota limits, `/api/v1/chat` falls back to Supabase-backed catalog tools while keeping the same response shape.
+The Lambda environment is configured with this agent and alias. Final CLI runtime tests against Bedrock still returned account-level restrictions, including `ValidationException: Operation not allowed` for `us.anthropic.claude-3-haiku-20240307-v1:0`. If the AWS account hits Bedrock model-access or daily token-quota limits, `/api/v1/chat` falls back to Supabase-backed catalog tools while keeping the same response shape.
 
 ## Frontend
 
@@ -73,7 +74,7 @@ BedrockAgentAliasId
 BedrockKbId
 ```
 
-If Bedrock IDs are empty, `/api/v1/chat` still works through the explicit backend fallback. For a full AWS demo, configure the Bedrock Agent and alias.
+If Bedrock IDs are empty, `/api/v1/chat` still works through the explicit backend fallback. For a full AWS demo, configure the Bedrock Agent and alias. If Bedrock runtime remains blocked by account access or quota, keep the fallback messaging clear in the demo.
 
 ## Supabase
 
@@ -92,8 +93,8 @@ python data/seed_products.py
 ## Smoke Tests
 
 ```bash
-curl https://YOUR_BACKEND_API_URL/health
-curl https://YOUR_BACKEND_API_URL/api/v1/products
+curl https://1ldl7jw5ng.execute-api.ap-southeast-1.amazonaws.com/health
+curl https://1ldl7jw5ng.execute-api.ap-southeast-1.amazonaws.com/api/v1/products
 ```
 
 Expected response envelope:

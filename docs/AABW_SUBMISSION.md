@@ -1,4 +1,4 @@
-﻿# ShopAssist AI AABW Submission
+# ShopAssist AI AABW Submission
 
 ## Project Name
 
@@ -45,7 +45,7 @@ For the MVP, product and promotion data is demo data seeded into Supabase. The p
 
 ## Why It Is Agentic
 
-ShopAssist AI is designed around AWS Bedrock Agents as the AI core, not as an add-on text completion layer.
+ShopAssist AI is designed around AWS Bedrock Agents as the intended AI core, not as an add-on text completion layer.
 
 Agentic behaviors:
 
@@ -69,7 +69,7 @@ Agentic behaviors:
 Example query:
 
 ```text
-MÃ¬nh cáº§n laptop gaming táº§m 20-25 triá»‡u, chÆ¡i game náº·ng Ä‘Æ°á»£c
+Mình cần laptop gaming tầm 20-25 triệu, chơi game nặng được
 ```
 
 Agent flow:
@@ -101,15 +101,32 @@ Frontend result:
 
 ## AWS Services
 
+### AWS Lambda and API Gateway
+
+The FastAPI backend is publicly deployed on AWS Lambda behind API Gateway using Mangum and AWS SAM.
+
+Production backend API:
+
+```text
+https://1ldl7jw5ng.execute-api.ap-southeast-1.amazonaws.com
+```
+
 ### AWS Bedrock Agents
 
-Core AI orchestration layer. Bedrock Agents select and coordinate tools for product search, detail lookup, comparison, stock/promotion checks, recommendations, and cart actions.
+Core AI orchestration target. The backend is configured with a real Bedrock Agent resource and production alias:
 
-The deployed backend is configured with a real Bedrock Agent resource and production alias. The app includes graceful degradation to Supabase-backed catalog tools when Bedrock runtime is blocked by account model-access or daily token-quota limits.
+```text
+Agent ID: SR8SCAOB8N
+Alias ID: EOFOCXP1FI
+```
 
-### Claude Sonnet 3.5 via Amazon Bedrock
+Bedrock Agents are responsible for selecting and coordinating tools for product search, detail lookup, comparison, stock/promotion checks, recommendations, and cart actions.
 
-Language understanding and response generation model used by the agent.
+Current runtime note: final CLI tests against Bedrock model invocation still returned account-level restrictions, including `ValidationException: Operation not allowed` for `us.anthropic.claude-3-haiku-20240307-v1:0`. The deployed app therefore uses the explicit graceful fallback to Supabase-backed catalog tools while keeping the same structured product-card response shape.
+
+### Claude via Amazon Bedrock
+
+Target language understanding and response generation model family for the agent. The code is ready to call Bedrock through the Bedrock Agent wrapper once account runtime access is available.
 
 ### AWS Bedrock Knowledge Bases
 
@@ -117,11 +134,7 @@ Planned retrieval layer for product specs guides, warranty policy, return policy
 
 ### AWS Bedrock Guardrails
 
-Safety layer for off-topic blocking and controlled retail assistant behavior.
-
-### AWS Lambda
-
-Backend deployment target. The FastAPI app is deployed on AWS Lambda + API Gateway through Mangum and AWS SAM.
+Planned safety layer for off-topic blocking and controlled retail assistant behavior.
 
 ### Amazon S3
 
@@ -132,11 +145,12 @@ Planned storage for knowledge-base documents and product media assets.
 ```text
 Customer
   -> React 19 + Vite 6 + Tailwind v4 frontend
-  -> FastAPI backend
-  -> AWS Bedrock Agent
+  -> AWS API Gateway
+  -> AWS Lambda FastAPI backend
+  -> Bedrock Agent wrapper
        -> retail action tools
        -> Supabase product and promotion data
-       -> Bedrock Knowledge Bases for unstructured support content
+       -> graceful fallback when Bedrock runtime is restricted
   -> structured response
   -> chat message + product cards + cart UI
 ```
@@ -161,26 +175,27 @@ The MVP data starts from:
 User:
 
 ```text
-MÃ¬nh cáº§n laptop gaming táº§m 20-25 triá»‡u, chÆ¡i game náº·ng Ä‘Æ°á»£c
+Mình cần laptop gaming tầm 20-25 triệu, chơi game nặng được
 ```
 
 Expected:
 
-- Agent identifies category, budget, and use case
-- Calls product search flow
-- Returns matching laptop product cards
+- Agentic flow identifies category, budget, and use case
+- Backend uses the product search flow
+- Supabase returns matching products
+- UI renders laptop product cards
 
 ### Flow 2: Comparison
 
 User:
 
 ```text
-So sÃ¡nh ASUS TUF vá»›i MSI Katana cho mÃ¬nh
+So sánh ASUS TUF với MSI Katana cho mình
 ```
 
 Expected:
 
-- Agent maps intent to comparison
+- Agentic flow maps intent to comparison
 - UI supports ComparisonTable with spec rows and winner highlight
 
 ### Flow 3: Stock and Promotion
@@ -188,12 +203,12 @@ Expected:
 User:
 
 ```text
-MSI Katana cÃ²n hÃ ng khÃ´ng? CÃ³ deal gÃ¬ khÃ´ng?
+MSI Katana còn hàng không? Có deal gì không?
 ```
 
 Expected:
 
-- Agent checks stock and promotion data
+- Backend checks stock and promotion data
 - UI shows stock status and promotion badge
 
 ### Flow 4: Cart Action
@@ -201,7 +216,7 @@ Expected:
 User or click:
 
 ```text
-Láº¥y cÃ¡i MSI nÃ y Ä‘i
+Lấy cái MSI này đi
 ```
 
 Expected:
@@ -218,6 +233,7 @@ MVP/demo metrics:
 - Support deflection: stock, promotion, and spec questions handled without human agent
 - Cart intent: product added to cart from chat
 - Response structure: product cards and comparison table render from backend response shape
+- Public demo availability: Vercel frontend can call AWS API Gateway backend
 - Time to recommendation: target under a few seconds after user query
 
 Production metrics to test after real catalog integration:
@@ -237,19 +253,21 @@ Completed:
 - Promotion data
 - Supabase seed script
 - FastAPI backend
-- Bedrock Agent wrapper with explicit local fallback
+- Bedrock Agent wrapper with explicit fallback
 - Six retail tool functions
 - React chat UI
 - Product cards, stock badges, comparison table, cart drawer
 - Integration smoke test for API response shapes and CORS
-- AWS Lambda deploy-ready template through SAM
 - Public AWS Lambda/API Gateway backend deployment
 - Vercel frontend configured with `VITE_API_URL`
 - Supabase reset schema mirrored under `infrastructure/`
+- Real Bedrock Agent resource and alias configured in the Lambda environment
+- Graceful fallback for current AWS Bedrock runtime access/quota restriction
 
 Not included yet:
 
 - Real Phong Vu API integration
+- Fully successful live Bedrock model invocation on the current AWS account
 - Production checkout
 - Auth
 - Admin catalog management
@@ -258,13 +276,14 @@ Not included yet:
 
 ## Differentiation
 
-ShopAssist AI makes the AI central to the commerce workflow. The agent is responsible for reasoning, choosing tools, retrieving product data, and producing structured UI outputs. The result is not just a chat answer; it is a guided retail workflow that can move a customer from vague intent to product choice and cart action.
+ShopAssist AI makes the AI central to the commerce workflow. The agentic layer is responsible for reasoning, choosing tools, retrieving product data, and producing structured UI outputs. The result is not just a chat answer; it is a guided retail workflow that can move a customer from vague intent to product choice and cart action.
 
 ## Submission Links
 
 Live demo URL: https://frontend-iota-green-31.vercel.app
 
+Backend API: https://1ldl7jw5ng.execute-api.ap-southeast-1.amazonaws.com
+
 GitHub repository: https://github.com/Hunny-17/shopassist-ai
 
 Demo video: Pending 3-minute screen recording
-

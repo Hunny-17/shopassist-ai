@@ -16,9 +16,9 @@ export default function CartItem({ item, onUpdateQuantity, onRemove }) {
   const { product, quantity } = item
 
   return (
-    <article className="rounded-xl border border-[#2E2E2E] bg-[#1A1A1A] p-3">
+    <article className="rounded-lg border border-[#D6E5F2] bg-white p-3">
       <div className="flex gap-3">
-        <div className="flex h-14 w-14 shrink-0 items-center justify-center overflow-hidden rounded-md border border-[#2E2E2E] bg-[#242424]">
+        <div className="flex h-14 w-14 shrink-0 items-center justify-center overflow-hidden rounded-md border border-[#D6E5F2] bg-[#EEF6FC]">
           {product.image_url ? (
             <img
               src={product.image_url}
@@ -27,31 +27,31 @@ export default function CartItem({ item, onUpdateQuantity, onRemove }) {
               loading="lazy"
             />
           ) : (
-            <span className="text-[11px] font-bold text-[#888888]">{product.brand}</span>
+            <span className="text-[11px] font-bold text-[#0B74BD]">{product.brand}</span>
           )}
         </div>
         <div className="min-w-0 flex-1">
-          <h3 className="line-clamp-2 text-sm font-bold text-white">{product.name}</h3>
-          <p className="mt-1 text-sm font-bold text-[#E31E24]">{formatVnd(product.price)}</p>
+          <h3 className="line-clamp-2 text-sm font-semibold text-[#172033]">{product.name}</h3>
+          <p className="mt-1 text-sm font-semibold text-[#0B74BD]">{formatVnd(product.price)}</p>
         </div>
       </div>
 
       <div className="mt-3 flex items-center justify-between">
-        <div className="flex items-center rounded-md border border-[#2E2E2E]">
+        <div className="flex items-center rounded-md border border-[#D6E5F2] bg-[#F4F9FD]">
           <button
             type="button"
             onClick={() => onUpdateQuantity(product.id, quantity - 1)}
-            className="flex h-8 w-8 items-center justify-center text-white hover:text-[#E31E24]"
+            className="flex h-8 w-8 items-center justify-center text-[#172033] hover:text-[#0B74BD]"
             aria-label="Giảm số lượng"
             title="Giảm số lượng"
           >
             <Minus size={14} />
           </button>
-          <span className="min-w-8 text-center text-sm text-white">{quantity}</span>
+          <span className="min-w-8 text-center text-sm text-[#172033]">{quantity}</span>
           <button
             type="button"
             onClick={() => onUpdateQuantity(product.id, quantity + 1)}
-            className="flex h-8 w-8 items-center justify-center text-white hover:text-[#E31E24]"
+            className="flex h-8 w-8 items-center justify-center text-[#172033] hover:text-[#0B74BD]"
             aria-label="Tăng số lượng"
             title="Tăng số lượng"
           >
@@ -61,7 +61,7 @@ export default function CartItem({ item, onUpdateQuantity, onRemove }) {
         <button
           type="button"
           onClick={() => onRemove(product.id)}
-          className="flex h-8 w-8 items-center justify-center rounded-md border border-[#2E2E2E] text-[#888888] hover:border-[#EF4444] hover:text-[#EF4444]"
+          className="flex h-8 w-8 items-center justify-center rounded-md border border-[#D6E5F2] text-[#52657A] hover:border-[#EF4444] hover:text-[#EF4444]"
           aria-label="Xóa sản phẩm"
           title="Xóa sản phẩm"
         >

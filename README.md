@@ -1,4 +1,4 @@
-﻿# ShopAssist AI
+# ShopAssist AI
 
 ShopAssist AI is a conversational retail sales agent for a Phong Vu-style electronics shopping experience. It helps customers describe what they need in natural language, then follows an agentic flow:
 
@@ -17,11 +17,10 @@ This is an MVP/demo implementation using synthetic product and promotion data se
 
 - Frontend: React 19 + Vite 6 + Tailwind v4
 - Backend: FastAPI Python 3.11
-- AI Core: AWS Bedrock Agents with Claude Sonnet 3.5
-- RAG/Safety: Bedrock Knowledge Bases and Bedrock Guardrails
-- Database: Supabase PostgreSQL + Realtime
-- Backend deploy target: AWS Lambda via Mangum
-- Frontend deploy target: Vercel
+- AI Core: AWS Bedrock Agents wrapper with structured retail tools
+- Database: Supabase PostgreSQL + Realtime-ready client
+- Backend deploy: AWS Lambda + API Gateway through Mangum and AWS SAM
+- Frontend deploy: Vercel
 
 ## Project Structure
 
@@ -61,7 +60,7 @@ ENVIRONMENT=development
 FRONTEND_URL=http://localhost:5173
 ```
 
-If Bedrock IDs are missing, the backend keeps `/api/v1/chat` usable through a clear local fallback. For the full AWS demo, configure `BEDROCK_AGENT_ID` and `BEDROCK_AGENT_ALIAS_ID`.
+If Bedrock IDs are missing, the backend keeps `/api/v1/chat` usable through a clear fallback. For the AWS path, configure `BEDROCK_AGENT_ID` and `BEDROCK_AGENT_ALIAS_ID`.
 
 ### 2. Install backend dependencies
 
@@ -152,7 +151,6 @@ Open:
 http://localhost:5173
 ```
 
-
 ## Deployment Status
 
 Frontend production URL: https://frontend-iota-green-31.vercel.app
@@ -163,7 +161,7 @@ GitHub repository: https://github.com/Hunny-17/shopassist-ai
 
 Backend status: Deployed on AWS Lambda + API Gateway through AWS SAM. The public API is configured as `VITE_API_URL` for the Vercel frontend.
 
-AWS Bedrock Agent status: Agent resource and production alias are configured for the backend. If Bedrock runtime is unavailable because of account model-access or token-quota limits, the backend gracefully falls back to Supabase catalog tools so the retail flow and product cards remain usable.
+AWS Bedrock Agent status: a real Bedrock Agent resource and production alias are configured for the backend (`SR8SCAOB8N` / `EOFOCXP1FI`). Current account-level Bedrock runtime access still returns `ValidationException: Operation not allowed` for tested model invocation paths, so the live demo uses the explicit graceful fallback: Supabase-backed retail tools return the same structured chat/product-card response shape.
 
 Deployment notes:
 
@@ -171,16 +169,22 @@ Deployment notes:
 docs/DEPLOYMENT.md
 ```
 
+Current implementation facts for comparing the original planning docs with the deployed product state:
+
+```text
+docs/IMPLEMENTATION_FACTS.md
+```
+
 ## Demo Queries
 
 Try these Retail Track flows:
 
 ```text
-MÃ¬nh cáº§n laptop gaming táº§m 20-25 triá»‡u, chÆ¡i game náº·ng Ä‘Æ°á»£c
-So sÃ¡nh ASUS TUF vá»›i MSI Katana cho mÃ¬nh
-MSI nÃ y cÃ²n hÃ ng khÃ´ng? CÃ³ deal gÃ¬ khÃ´ng?
-CÃ³ chuá»™t wireless nÃ o dÆ°á»›i 700k dÃ¹ng vÄƒn phÃ²ng á»•n khÃ´ng?
-MÃ¬nh hay lÃ m viá»‡c ban Ä‘Ãªm, cáº§n mÃ n hÃ¬nh khÃ´ng háº¡i máº¯t
+Mình cần laptop gaming tầm 20-25 triệu, chơi game nặng được
+So sánh ASUS TUF với MSI Katana cho mình
+MSI này còn hàng không? Có deal gì không?
+Có chuột wireless nào dưới 700k dùng văn phòng ổn không?
+Mình hay làm việc ban đêm, cần màn hình không hại mắt
 ```
 
 ## Verification
@@ -222,12 +226,14 @@ Implemented:
 - Six agent tools for product search, details, comparison, stock/promotion, recommendations, cart
 - React chat UI with inline product cards
 - Product grid, comparison table, stock badges, cart drawer, mock analytics
+- Public AWS Lambda/API Gateway backend
+- Public Vercel frontend
+- Supabase-backed public demo data
 
 Not yet production-integrated:
 
 - Real Phong Vu product API
+- Successful live Bedrock model invocation on the current AWS account
 - Real checkout/payment flow
 - Production Bedrock Knowledge Base ingestion pipeline
 - Auth/admin dashboard
-
-

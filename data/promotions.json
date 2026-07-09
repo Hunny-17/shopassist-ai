@@ -4,7 +4,7 @@
     "product_id": "msi-katana-15-001",
     "discount_type": "percentage",
     "discount_value": 10,
-    "label": "Gi?m 10% + t?ng chu?t gaming",
+    "label": "Giảm 10% + tặng chuột gaming",
     "start_date": "2026-07-01",
     "end_date": "2026-07-31",
     "is_active": true
@@ -14,7 +14,7 @@
     "product_id": "asus-tuf-a15-001",
     "discount_type": "gift",
     "discount_value": 0,
-    "label": "T?ng balo ASUS TUF khi mua m?y",
+    "label": "Tặng balo ASUS TUF khi mua máy",
     "start_date": "2026-07-01",
     "end_date": "2026-07-21",
     "is_active": true
@@ -24,7 +24,7 @@
     "product_id": "acer-nitro-v15-001",
     "discount_type": "fixed",
     "discount_value": 1000000,
-    "label": "Gi?m th?m 1.000.000? cho sinh vi?n",
+    "label": "Giảm thêm 1.000.000đ cho sinh viên",
     "start_date": "2026-07-01",
     "end_date": "2026-07-31",
     "is_active": true
@@ -34,7 +34,7 @@
     "product_id": "lenovo-loq-15-001",
     "discount_type": "bundle",
     "discount_value": 5,
-    "label": "Combo laptop + chu?t gi?m th?m 5%",
+    "label": "Combo laptop + chuột giảm thêm 5%",
     "start_date": "2026-07-03",
     "end_date": "2026-07-28",
     "is_active": true
@@ -44,7 +44,7 @@
     "product_id": "hp-victus-16-001",
     "discount_type": "fixed",
     "discount_value": 1500000,
-    "label": "Gi?m 1.500.000? khi thanh to?n online",
+    "label": "Giảm 1.500.000đ khi thanh toán online",
     "start_date": "2026-07-01",
     "end_date": "2026-07-31",
     "is_active": true
@@ -54,7 +54,7 @@
     "product_id": "lg-27up850n-001",
     "discount_type": "percentage",
     "discount_value": 8,
-    "label": "Gi?m 8% m?n h?nh 4K USB-C",
+    "label": "Giảm 8% màn hình 4K USB-C",
     "start_date": "2026-07-01",
     "end_date": "2026-07-31",
     "is_active": true
@@ -64,7 +64,7 @@
     "product_id": "dell-s2722qc-001",
     "discount_type": "fixed",
     "discount_value": 700000,
-    "label": "Gi?m 700.000? cho m?n h?nh l?m vi?c ban ??m",
+    "label": "Giảm 700.000đ cho màn hình làm việc ban đêm",
     "start_date": "2026-07-01",
     "end_date": "2026-07-20",
     "is_active": true
@@ -74,7 +74,7 @@
     "product_id": "asus-tuf-vg249q3a-001",
     "discount_type": "percentage",
     "discount_value": 7,
-    "label": "Gi?m 7% m?n gaming eSports",
+    "label": "Giảm 7% màn gaming eSports",
     "start_date": "2026-07-05",
     "end_date": "2026-07-31",
     "is_active": true
@@ -84,7 +84,7 @@
     "product_id": "logitech-g304-001",
     "discount_type": "fixed",
     "discount_value": 100000,
-    "label": "Gi?m 100.000? chu?t gaming wireless",
+    "label": "Giảm 100.000đ chuột gaming wireless",
     "start_date": "2026-07-01",
     "end_date": "2026-07-31",
     "is_active": true
@@ -94,7 +94,7 @@
     "product_id": "logitech-m650-001",
     "discount_type": "bundle",
     "discount_value": 5,
-    "label": "Mua k?m laptop v?n ph?ng gi?m th?m 5%",
+    "label": "Mua kèm laptop văn phòng giảm thêm 5%",
     "start_date": "2026-07-01",
     "end_date": "2026-07-31",
     "is_active": true
@@ -104,7 +104,7 @@
     "product_id": "razer-blackwidow-v4-001",
     "discount_type": "percentage",
     "discount_value": 12,
-    "label": "Gi?m 12% b?n ph?m c? RGB",
+    "label": "Giảm 12% bàn phím cơ RGB",
     "start_date": "2026-07-01",
     "end_date": "2026-07-18",
     "is_active": true
@@ -114,7 +114,7 @@
     "product_id": "logitech-mx-keys-s-001",
     "discount_type": "fixed",
     "discount_value": 300000,
-    "label": "Gi?m 300.000? cho b? setup v?n ph?ng",
+    "label": "Giảm 300.000đ cho bộ setup văn phòng",
     "start_date": "2026-07-01",
     "end_date": "2026-07-31",
     "is_active": true
@@ -124,7 +124,7 @@
     "product_id": "steelseries-arctis-1-wireless-001",
     "discount_type": "percentage",
     "discount_value": 10,
-    "label": "Gi?m 10% tai nghe gaming wireless",
+    "label": "Giảm 10% tai nghe gaming wireless",
     "start_date": "2026-07-01",
     "end_date": "2026-07-31",
     "is_active": true
@@ -134,7 +134,7 @@
     "product_id": "logitech-g435-001",
     "discount_type": "fixed",
     "discount_value": 200000,
-    "label": "Gi?m 200.000? tai nghe nh? cho h?c t?p",
+    "label": "Giảm 200.000đ tai nghe nhẹ cho học tập",
     "start_date": "2026-07-04",
     "end_date": "2026-07-31",
     "is_active": true
@@ -144,7 +144,7 @@
     "product_id": "dell-xps-13-9340-001",
     "discount_type": "gift",
     "discount_value": 0,
-    "label": "T?ng t?i ch?ng s?c cao c?p",
+    "label": "Tặng túi chống sốc cao cấp",
     "start_date": "2026-07-01",
     "end_date": "2026-07-25",
     "is_active": true

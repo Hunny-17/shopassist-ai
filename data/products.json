@@ -1,1740 +1,1740 @@
 [
-  {
-    "id": "msi-katana-15-001",
-    "name": "MSI Katana 15 B13VFK",
-    "category": "laptop",
-    "subcategory": "gaming",
-    "brand": "MSI",
-    "price": 21990000,
-    "original_price": 24990000,
-    "stock": 5,
-    "specs": {
-      "cpu": "Intel Core i7-13620H",
-      "ram": "16GB DDR5",
-      "ram_upgradeable": true,
-      "gpu": "NVIDIA RTX 4060 8GB",
-      "storage": "512GB NVMe SSD",
-      "storage_upgradeable": true,
-      "screen_size": "15.6 inch",
-      "screen_resolution": "1920x1080",
-      "screen_refresh_rate": "144Hz",
-      "battery_wh": 53,
-      "weight_kg": 2.25,
-      "os": "Windows 11 Home",
-      "ports": [
-        "USB-A x2",
-        "USB-C",
-        "HDMI 2.1",
-        "Audio combo"
-      ],
-      "thunderbolt": false,
-      "wifi": "WiFi 6",
-      "bluetooth": "5.2"
+    {
+        "id":  "msi-katana-15-001",
+        "name":  "MSI Katana 15 B13VFK",
+        "category":  "laptop",
+        "subcategory":  "gaming",
+        "brand":  "MSI",
+        "price":  21990000,
+        "original_price":  24990000,
+        "stock":  5,
+        "specs":  {
+                      "cpu":  "Intel Core i7-13620H",
+                      "ram":  "16GB DDR5",
+                      "ram_upgradeable":  true,
+                      "gpu":  "NVIDIA RTX 4060 8GB",
+                      "storage":  "512GB NVMe SSD",
+                      "storage_upgradeable":  true,
+                      "screen_size":  "15.6 inch",
+                      "screen_resolution":  "1920x1080",
+                      "screen_refresh_rate":  "144Hz",
+                      "battery_wh":  53,
+                      "weight_kg":  2.25,
+                      "os":  "Windows 11 Home",
+                      "ports":  [
+                                    "USB-A x2",
+                                    "USB-C",
+                                    "HDMI 2.1",
+                                    "Audio combo"
+                                ],
+                      "thunderbolt":  false,
+                      "wifi":  "WiFi 6",
+                      "bluetooth":  "5.2"
+                  },
+        "description":  "Laptop gaming tầm trung mạnh về hiệu năng trên giá, phù hợp game AAA và eSports.",
+        "image_url":  "https://example.com/images/msi-katana-15-b13vfk.jpg",
+        "warranty_months":  24,
+        "tags":  [
+                     "gaming",
+                     "144hz",
+                     "premium",
+                     "rgb",
+                     "esports"
+                 ],
+        "is_active":  true
     },
-    "description": "Laptop gaming t?m trung m?nh v? hi?u n?ng tr?n gi?, ph? h?p game AAA v? eSports.",
-    "image_url": "https://example.com/images/msi-katana-15-b13vfk.jpg",
-    "warranty_months": 24,
-    "tags": [
-      "gaming",
-      "144hz",
-      "premium",
-      "rgb",
-      "esports"
-    ],
-    "is_active": true
-  },
-  {
-    "id": "asus-tuf-a15-001",
-    "name": "ASUS TUF Gaming A15 FA507NV",
-    "category": "laptop",
-    "subcategory": "gaming",
-    "brand": "ASUS",
-    "price": 22990000,
-    "original_price": 25990000,
-    "stock": 8,
-    "specs": {
-      "cpu": "AMD Ryzen 7 7735HS",
-      "ram": "16GB DDR5",
-      "ram_upgradeable": true,
-      "gpu": "NVIDIA RTX 4060 8GB",
-      "storage": "512GB NVMe SSD",
-      "storage_upgradeable": true,
-      "screen_size": "15.6 inch",
-      "screen_resolution": "1920x1080",
-      "screen_refresh_rate": "144Hz",
-      "battery_wh": 90,
-      "weight_kg": 2.2,
-      "os": "Windows 11 Home",
-      "ports": [
-        "USB-A x2",
-        "USB-C",
-        "HDMI 2.1",
-        "Audio combo"
-      ],
-      "thunderbolt": false,
-      "wifi": "WiFi 6",
-      "bluetooth": "5.2"
+    {
+        "id":  "asus-tuf-a15-001",
+        "name":  "ASUS TUF Gaming A15 FA507NV",
+        "category":  "laptop",
+        "subcategory":  "gaming",
+        "brand":  "ASUS",
+        "price":  22990000,
+        "original_price":  25990000,
+        "stock":  8,
+        "specs":  {
+                      "cpu":  "AMD Ryzen 7 7735HS",
+                      "ram":  "16GB DDR5",
+                      "ram_upgradeable":  true,
+                      "gpu":  "NVIDIA RTX 4060 8GB",
+                      "storage":  "512GB NVMe SSD",
+                      "storage_upgradeable":  true,
+                      "screen_size":  "15.6 inch",
+                      "screen_resolution":  "1920x1080",
+                      "screen_refresh_rate":  "144Hz",
+                      "battery_wh":  90,
+                      "weight_kg":  2.2,
+                      "os":  "Windows 11 Home",
+                      "ports":  [
+                                    "USB-A x2",
+                                    "USB-C",
+                                    "HDMI 2.1",
+                                    "Audio combo"
+                                ],
+                      "thunderbolt":  false,
+                      "wifi":  "WiFi 6",
+                      "bluetooth":  "5.2"
+                  },
+        "description":  "Laptop gaming bền bỉ, pin lớn, cân tốt học tập, đồ họa nhẹ và gaming.",
+        "image_url":  "https://example.com/images/asus-tuf-a15-fa507nv.jpg",
+        "warranty_months":  24,
+        "tags":  [
+                     "gaming",
+                     "144hz",
+                     "premium",
+                     "rgb"
+                 ],
+        "is_active":  true
     },
-    "description": "Laptop gaming b?n b?, pin l?n, c?n t?t h?c t?p, ?? h?a nh? v? gaming.",
-    "image_url": "https://example.com/images/asus-tuf-a15-fa507nv.jpg",
-    "warranty_months": 24,
-    "tags": [
-      "gaming",
-      "144hz",
-      "premium",
-      "rgb"
-    ],
-    "is_active": true
-  },
-  {
-    "id": "acer-nitro-v15-001",
-    "name": "Acer Nitro V 15 ANV15",
-    "category": "laptop",
-    "subcategory": "gaming",
-    "brand": "Acer",
-    "price": 19990000,
-    "original_price": 21990000,
-    "stock": 12,
-    "specs": {
-      "cpu": "Intel Core i5-13420H",
-      "ram": "16GB DDR5",
-      "ram_upgradeable": true,
-      "gpu": "NVIDIA RTX 4050 6GB",
-      "storage": "512GB NVMe SSD",
-      "storage_upgradeable": true,
-      "screen_size": "15.6 inch",
-      "screen_resolution": "1920x1080",
-      "screen_refresh_rate": "144Hz",
-      "battery_wh": 57,
-      "weight_kg": 2.1,
-      "os": "Windows 11 Home",
-      "ports": [
-        "USB-A x2",
-        "USB-C",
-        "HDMI 2.1",
-        "Audio combo"
-      ],
-      "thunderbolt": false,
-      "wifi": "WiFi 6",
-      "bluetooth": "5.2"
+    {
+        "id":  "acer-nitro-v15-001",
+        "name":  "Acer Nitro V 15 ANV15",
+        "category":  "laptop",
+        "subcategory":  "gaming",
+        "brand":  "Acer",
+        "price":  19990000,
+        "original_price":  21990000,
+        "stock":  12,
+        "specs":  {
+                      "cpu":  "Intel Core i5-13420H",
+                      "ram":  "16GB DDR5",
+                      "ram_upgradeable":  true,
+                      "gpu":  "NVIDIA RTX 4050 6GB",
+                      "storage":  "512GB NVMe SSD",
+                      "storage_upgradeable":  true,
+                      "screen_size":  "15.6 inch",
+                      "screen_resolution":  "1920x1080",
+                      "screen_refresh_rate":  "144Hz",
+                      "battery_wh":  57,
+                      "weight_kg":  2.1,
+                      "os":  "Windows 11 Home",
+                      "ports":  [
+                                    "USB-A x2",
+                                    "USB-C",
+                                    "HDMI 2.1",
+                                    "Audio combo"
+                                ],
+                      "thunderbolt":  false,
+                      "wifi":  "WiFi 6",
+                      "bluetooth":  "5.2"
+                  },
+        "description":  "Laptop gaming dễ tiếp cận cho sinh viên, chơi eSports mượt và nâng cấp linh hoạt.",
+        "image_url":  "https://example.com/images/acer-nitro-v15.jpg",
+        "warranty_months":  24,
+        "tags":  [
+                     "gaming",
+                     "144hz",
+                     "budget",
+                     "rgb",
+                     "student"
+                 ],
+        "is_active":  true
     },
-    "description": "Laptop gaming d? ti?p c?n cho sinh vi?n, ch?i eSports m??t v? n?ng c?p linh ho?t.",
-    "image_url": "https://example.com/images/acer-nitro-v15.jpg",
-    "warranty_months": 24,
-    "tags": [
-      "gaming",
-      "144hz",
-      "budget",
-      "rgb",
-      "student"
-    ],
-    "is_active": true
-  },
-  {
-    "id": "lenovo-loq-15-001",
-    "name": "Lenovo LOQ 15IRH8",
-    "category": "laptop",
-    "subcategory": "gaming",
-    "brand": "Lenovo",
-    "price": 18490000,
-    "original_price": 20490000,
-    "stock": 3,
-    "specs": {
-      "cpu": "Intel Core i5-12450H",
-      "ram": "16GB DDR5",
-      "ram_upgradeable": true,
-      "gpu": "NVIDIA RTX 4050 6GB",
-      "storage": "512GB NVMe SSD",
-      "storage_upgradeable": true,
-      "screen_size": "15.6 inch",
-      "screen_resolution": "1920x1080",
-      "screen_refresh_rate": "144Hz",
-      "battery_wh": 60,
-      "weight_kg": 2.4,
-      "os": "Windows 11 Home",
-      "ports": [
-        "USB-A x2",
-        "USB-C",
-        "HDMI 2.1",
-        "Audio combo"
-      ],
-      "thunderbolt": false,
-      "wifi": "WiFi 6",
-      "bluetooth": "5.2"
+    {
+        "id":  "lenovo-loq-15-001",
+        "name":  "Lenovo LOQ 15IRH8",
+        "category":  "laptop",
+        "subcategory":  "gaming",
+        "brand":  "Lenovo",
+        "price":  18490000,
+        "original_price":  20490000,
+        "stock":  3,
+        "specs":  {
+                      "cpu":  "Intel Core i5-12450H",
+                      "ram":  "16GB DDR5",
+                      "ram_upgradeable":  true,
+                      "gpu":  "NVIDIA RTX 4050 6GB",
+                      "storage":  "512GB NVMe SSD",
+                      "storage_upgradeable":  true,
+                      "screen_size":  "15.6 inch",
+                      "screen_resolution":  "1920x1080",
+                      "screen_refresh_rate":  "144Hz",
+                      "battery_wh":  60,
+                      "weight_kg":  2.4,
+                      "os":  "Windows 11 Home",
+                      "ports":  [
+                                    "USB-A x2",
+                                    "USB-C",
+                                    "HDMI 2.1",
+                                    "Audio combo"
+                                ],
+                      "thunderbolt":  false,
+                      "wifi":  "WiFi 6",
+                      "bluetooth":  "5.2"
+                  },
+        "description":  "Laptop gaming giá tốt, phù hợp người mới bắt đầu chơi game và học kỹ thuật.",
+        "image_url":  "https://example.com/images/lenovo-loq-15irh8.jpg",
+        "warranty_months":  24,
+        "tags":  [
+                     "gaming",
+                     "144hz",
+                     "budget",
+                     "student"
+                 ],
+        "is_active":  true
     },
-    "description": "Laptop gaming gi? t?t, ph? h?p ng??i m?i b?t ??u ch?i game v? h?c k? thu?t.",
-    "image_url": "https://example.com/images/lenovo-loq-15irh8.jpg",
-    "warranty_months": 24,
-    "tags": [
-      "gaming",
-      "144hz",
-      "budget",
-      "student"
-    ],
-    "is_active": true
-  },
-  {
-    "id": "hp-victus-16-001",
-    "name": "HP Victus 16-r0127TX",
-    "category": "laptop",
-    "subcategory": "gaming",
-    "brand": "HP",
-    "price": 24990000,
-    "original_price": 27990000,
-    "stock": 6,
-    "specs": {
-      "cpu": "Intel Core i7-13700H",
-      "ram": "16GB DDR5",
-      "ram_upgradeable": true,
-      "gpu": "NVIDIA RTX 4060 8GB",
-      "storage": "1TB NVMe SSD",
-      "storage_upgradeable": true,
-      "screen_size": "16.1 inch",
-      "screen_resolution": "1920x1080",
-      "screen_refresh_rate": "144Hz",
-      "battery_wh": 70,
-      "weight_kg": 2.33,
-      "os": "Windows 11 Home",
-      "ports": [
-        "USB-A x2",
-        "USB-C",
-        "HDMI 2.1",
-        "Audio combo"
-      ],
-      "thunderbolt": false,
-      "wifi": "WiFi 6",
-      "bluetooth": "5.2"
+    {
+        "id":  "hp-victus-16-001",
+        "name":  "HP Victus 16-r0127TX",
+        "category":  "laptop",
+        "subcategory":  "gaming",
+        "brand":  "HP",
+        "price":  24990000,
+        "original_price":  27990000,
+        "stock":  6,
+        "specs":  {
+                      "cpu":  "Intel Core i7-13700H",
+                      "ram":  "16GB DDR5",
+                      "ram_upgradeable":  true,
+                      "gpu":  "NVIDIA RTX 4060 8GB",
+                      "storage":  "1TB NVMe SSD",
+                      "storage_upgradeable":  true,
+                      "screen_size":  "16.1 inch",
+                      "screen_resolution":  "1920x1080",
+                      "screen_refresh_rate":  "144Hz",
+                      "battery_wh":  70,
+                      "weight_kg":  2.33,
+                      "os":  "Windows 11 Home",
+                      "ports":  [
+                                    "USB-A x2",
+                                    "USB-C",
+                                    "HDMI 2.1",
+                                    "Audio combo"
+                                ],
+                      "thunderbolt":  false,
+                      "wifi":  "WiFi 6",
+                      "bluetooth":  "5.2"
+                  },
+        "description":  "Màn hình lớn 16 inch, cấu hình mạnh cho game, dựng video và đa nhiệm.",
+        "image_url":  "https://example.com/images/hp-victus-16.jpg",
+        "warranty_months":  24,
+        "tags":  [
+                     "gaming",
+                     "144hz",
+                     "premium",
+                     "creator"
+                 ],
+        "is_active":  true
     },
-    "description": "M?n h?nh l?n 16 inch, c?u h?nh m?nh cho game, d?ng video v? ?a nhi?m.",
-    "image_url": "https://example.com/images/hp-victus-16.jpg",
-    "warranty_months": 24,
-    "tags": [
-      "gaming",
-      "144hz",
-      "premium",
-      "creator"
-    ],
-    "is_active": true
-  },
-  {
-    "id": "dell-g15-5530-001",
-    "name": "Dell G15 5530",
-    "category": "laptop",
-    "subcategory": "gaming",
-    "brand": "Dell",
-    "price": 28990000,
-    "original_price": 31990000,
-    "stock": 4,
-    "specs": {
-      "cpu": "Intel Core i7-13650HX",
-      "ram": "16GB DDR5",
-      "ram_upgradeable": true,
-      "gpu": "NVIDIA RTX 4060 8GB",
-      "storage": "1TB NVMe SSD",
-      "storage_upgradeable": true,
-      "screen_size": "15.6 inch",
-      "screen_resolution": "2560x1440",
-      "screen_refresh_rate": "165Hz",
-      "battery_wh": 86,
-      "weight_kg": 2.65,
-      "os": "Windows 11 Home",
-      "ports": [
-        "USB-A x2",
-        "USB-C",
-        "HDMI 2.1",
-        "Audio combo"
-      ],
-      "thunderbolt": false,
-      "wifi": "WiFi 6",
-      "bluetooth": "5.2"
+    {
+        "id":  "dell-g15-5530-001",
+        "name":  "Dell G15 5530",
+        "category":  "laptop",
+        "subcategory":  "gaming",
+        "brand":  "Dell",
+        "price":  28990000,
+        "original_price":  31990000,
+        "stock":  4,
+        "specs":  {
+                      "cpu":  "Intel Core i7-13650HX",
+                      "ram":  "16GB DDR5",
+                      "ram_upgradeable":  true,
+                      "gpu":  "NVIDIA RTX 4060 8GB",
+                      "storage":  "1TB NVMe SSD",
+                      "storage_upgradeable":  true,
+                      "screen_size":  "15.6 inch",
+                      "screen_resolution":  "2560x1440",
+                      "screen_refresh_rate":  "165Hz",
+                      "battery_wh":  86,
+                      "weight_kg":  2.65,
+                      "os":  "Windows 11 Home",
+                      "ports":  [
+                                    "USB-A x2",
+                                    "USB-C",
+                                    "HDMI 2.1",
+                                    "Audio combo"
+                                ],
+                      "thunderbolt":  false,
+                      "wifi":  "WiFi 6",
+                      "bluetooth":  "5.2"
+                  },
+        "description":  "Laptop gaming chắc chắn, màn QHD 165Hz cho game thủ cần độ chi tiết cao.",
+        "image_url":  "https://example.com/images/dell-g15-5530.jpg",
+        "warranty_months":  24,
+        "tags":  [
+                     "gaming",
+                     "144hz",
+                     "premium",
+                     "creator"
+                 ],
+        "is_active":  true
     },
-    "description": "Laptop gaming ch?c ch?n, m?n QHD 165Hz cho game th? c?n ?? chi ti?t cao.",
-    "image_url": "https://example.com/images/dell-g15-5530.jpg",
-    "warranty_months": 24,
-    "tags": [
-      "gaming",
-      "144hz",
-      "premium",
-      "creator"
-    ],
-    "is_active": true
-  },
-  {
-    "id": "asus-rog-strix-g16-001",
-    "name": "ASUS ROG Strix G16 G614",
-    "category": "laptop",
-    "subcategory": "gaming",
-    "brand": "ASUS",
-    "price": 39990000,
-    "original_price": 44990000,
-    "stock": 2,
-    "specs": {
-      "cpu": "Intel Core i9-13980HX",
-      "ram": "32GB DDR5",
-      "ram_upgradeable": true,
-      "gpu": "NVIDIA RTX 4070 8GB",
-      "storage": "1TB NVMe SSD",
-      "storage_upgradeable": true,
-      "screen_size": "16 inch",
-      "screen_resolution": "2560x1600",
-      "screen_refresh_rate": "240Hz",
-      "battery_wh": 90,
-      "weight_kg": 2.5,
-      "os": "Windows 11 Home",
-      "ports": [
-        "USB-A x2",
-        "USB-C",
-        "HDMI 2.1",
-        "Audio combo"
-      ],
-      "thunderbolt": false,
-      "wifi": "WiFi 6",
-      "bluetooth": "5.2"
+    {
+        "id":  "asus-rog-strix-g16-001",
+        "name":  "ASUS ROG Strix G16 G614",
+        "category":  "laptop",
+        "subcategory":  "gaming",
+        "brand":  "ASUS",
+        "price":  39990000,
+        "original_price":  44990000,
+        "stock":  2,
+        "specs":  {
+                      "cpu":  "Intel Core i9-13980HX",
+                      "ram":  "32GB DDR5",
+                      "ram_upgradeable":  true,
+                      "gpu":  "NVIDIA RTX 4070 8GB",
+                      "storage":  "1TB NVMe SSD",
+                      "storage_upgradeable":  true,
+                      "screen_size":  "16 inch",
+                      "screen_resolution":  "2560x1600",
+                      "screen_refresh_rate":  "240Hz",
+                      "battery_wh":  90,
+                      "weight_kg":  2.5,
+                      "os":  "Windows 11 Home",
+                      "ports":  [
+                                    "USB-A x2",
+                                    "USB-C",
+                                    "HDMI 2.1",
+                                    "Audio combo"
+                                ],
+                      "thunderbolt":  false,
+                      "wifi":  "WiFi 6",
+                      "bluetooth":  "5.2"
+                  },
+        "description":  "Gaming laptop cao cấp cho game nặng, stream và sáng tạo nội dung.",
+        "image_url":  "https://example.com/images/asus-rog-strix-g16.jpg",
+        "warranty_months":  24,
+        "tags":  [
+                     "gaming",
+                     "premium",
+                     "rgb",
+                     "creator"
+                 ],
+        "is_active":  true
     },
-    "description": "Gaming laptop cao c?p cho game n?ng, stream v? s?ng t?o n?i dung.",
-    "image_url": "https://example.com/images/asus-rog-strix-g16.jpg",
-    "warranty_months": 24,
-    "tags": [
-      "gaming",
-      "premium",
-      "rgb",
-      "creator"
-    ],
-    "is_active": true
-  },
-  {
-    "id": "msi-cyborg-15-001",
-    "name": "MSI Cyborg 15 A13VE",
-    "category": "laptop",
-    "subcategory": "gaming",
-    "brand": "MSI",
-    "price": 17490000,
-    "original_price": 19490000,
-    "stock": 9,
-    "specs": {
-      "cpu": "Intel Core i5-13420H",
-      "ram": "16GB DDR5",
-      "ram_upgradeable": true,
-      "gpu": "NVIDIA RTX 4050 6GB",
-      "storage": "512GB NVMe SSD",
-      "storage_upgradeable": true,
-      "screen_size": "15.6 inch",
-      "screen_resolution": "1920x1080",
-      "screen_refresh_rate": "144Hz",
-      "battery_wh": 53,
-      "weight_kg": 1.98,
-      "os": "Windows 11 Home",
-      "ports": [
-        "USB-A x2",
-        "USB-C",
-        "HDMI 2.1",
-        "Audio combo"
-      ],
-      "thunderbolt": false,
-      "wifi": "WiFi 6",
-      "bluetooth": "5.2"
+    {
+        "id":  "msi-cyborg-15-001",
+        "name":  "MSI Cyborg 15 A13VE",
+        "category":  "laptop",
+        "subcategory":  "gaming",
+        "brand":  "MSI",
+        "price":  17490000,
+        "original_price":  19490000,
+        "stock":  9,
+        "specs":  {
+                      "cpu":  "Intel Core i5-13420H",
+                      "ram":  "16GB DDR5",
+                      "ram_upgradeable":  true,
+                      "gpu":  "NVIDIA RTX 4050 6GB",
+                      "storage":  "512GB NVMe SSD",
+                      "storage_upgradeable":  true,
+                      "screen_size":  "15.6 inch",
+                      "screen_resolution":  "1920x1080",
+                      "screen_refresh_rate":  "144Hz",
+                      "battery_wh":  53,
+                      "weight_kg":  1.98,
+                      "os":  "Windows 11 Home",
+                      "ports":  [
+                                    "USB-A x2",
+                                    "USB-C",
+                                    "HDMI 2.1",
+                                    "Audio combo"
+                                ],
+                      "thunderbolt":  false,
+                      "wifi":  "WiFi 6",
+                      "bluetooth":  "5.2"
+                  },
+        "description":  "Thiết kế nhẹ trong nhóm laptop gaming, hợp học tập và chơi eSports.",
+        "image_url":  "https://example.com/images/msi-cyborg-15.jpg",
+        "warranty_months":  24,
+        "tags":  [
+                     "gaming",
+                     "144hz",
+                     "budget",
+                     "portable",
+                     "rgb"
+                 ],
+        "is_active":  true
     },
-    "description": "Thi?t k? nh? trong nh?m laptop gaming, h?p h?c t?p v? ch?i eSports.",
-    "image_url": "https://example.com/images/msi-cyborg-15.jpg",
-    "warranty_months": 24,
-    "tags": [
-      "gaming",
-      "144hz",
-      "budget",
-      "portable",
-      "rgb"
-    ],
-    "is_active": true
-  },
-  {
-    "id": "acer-predator-helios-neo-001",
-    "name": "Acer Predator Helios Neo 16",
-    "category": "laptop",
-    "subcategory": "gaming",
-    "brand": "Acer",
-    "price": 34990000,
-    "original_price": 38990000,
-    "stock": 0,
-    "specs": {
-      "cpu": "Intel Core i7-13700HX",
-      "ram": "16GB DDR5",
-      "ram_upgradeable": true,
-      "gpu": "NVIDIA RTX 4060 8GB",
-      "storage": "1TB NVMe SSD",
-      "storage_upgradeable": true,
-      "screen_size": "16 inch",
-      "screen_resolution": "2560x1600",
-      "screen_refresh_rate": "165Hz",
-      "battery_wh": 90,
-      "weight_kg": 2.6,
-      "os": "Windows 11 Home",
-      "ports": [
-        "USB-A x2",
-        "USB-C",
-        "HDMI 2.1",
-        "Audio combo"
-      ],
-      "thunderbolt": false,
-      "wifi": "WiFi 6",
-      "bluetooth": "5.2"
+    {
+        "id":  "acer-predator-helios-neo-001",
+        "name":  "Acer Predator Helios Neo 16",
+        "category":  "laptop",
+        "subcategory":  "gaming",
+        "brand":  "Acer",
+        "price":  34990000,
+        "original_price":  38990000,
+        "stock":  0,
+        "specs":  {
+                      "cpu":  "Intel Core i7-13700HX",
+                      "ram":  "16GB DDR5",
+                      "ram_upgradeable":  true,
+                      "gpu":  "NVIDIA RTX 4060 8GB",
+                      "storage":  "1TB NVMe SSD",
+                      "storage_upgradeable":  true,
+                      "screen_size":  "16 inch",
+                      "screen_resolution":  "2560x1600",
+                      "screen_refresh_rate":  "165Hz",
+                      "battery_wh":  90,
+                      "weight_kg":  2.6,
+                      "os":  "Windows 11 Home",
+                      "ports":  [
+                                    "USB-A x2",
+                                    "USB-C",
+                                    "HDMI 2.1",
+                                    "Audio combo"
+                                ],
+                      "thunderbolt":  false,
+                      "wifi":  "WiFi 6",
+                      "bluetooth":  "5.2"
+                  },
+        "description":  "Laptop gaming hiệu năng cao với màn 16 inch sắc nét, phù hợp game và đồ họa.",
+        "image_url":  "https://example.com/images/acer-predator-helios-neo-16.jpg",
+        "warranty_months":  24,
+        "tags":  [
+                     "gaming",
+                     "premium",
+                     "rgb",
+                     "creator"
+                 ],
+        "is_active":  true
     },
-    "description": "Laptop gaming hi?u n?ng cao v?i m?n 16 inch s?c n?t, ph? h?p game v? ?? h?a.",
-    "image_url": "https://example.com/images/acer-predator-helios-neo-16.jpg",
-    "warranty_months": 24,
-    "tags": [
-      "gaming",
-      "premium",
-      "rgb",
-      "creator"
-    ],
-    "is_active": true
-  },
-  {
-    "id": "razer-blade-14-001",
-    "name": "Razer Blade 14",
-    "category": "laptop",
-    "subcategory": "gaming",
-    "brand": "Razer",
-    "price": 44990000,
-    "original_price": 47990000,
-    "stock": 1,
-    "specs": {
-      "cpu": "AMD Ryzen 9 7940HS",
-      "ram": "16GB DDR5",
-      "ram_upgradeable": true,
-      "gpu": "NVIDIA RTX 4070 8GB",
-      "storage": "1TB NVMe SSD",
-      "storage_upgradeable": true,
-      "screen_size": "14 inch",
-      "screen_resolution": "2560x1600",
-      "screen_refresh_rate": "240Hz",
-      "battery_wh": 68,
-      "weight_kg": 1.84,
-      "os": "Windows 11 Home",
-      "ports": [
-        "USB-A x2",
-        "USB-C",
-        "HDMI 2.1",
-        "Audio combo"
-      ],
-      "thunderbolt": false,
-      "wifi": "WiFi 6",
-      "bluetooth": "5.2"
+    {
+        "id":  "razer-blade-14-001",
+        "name":  "Razer Blade 14",
+        "category":  "laptop",
+        "subcategory":  "gaming",
+        "brand":  "Razer",
+        "price":  44990000,
+        "original_price":  47990000,
+        "stock":  1,
+        "specs":  {
+                      "cpu":  "AMD Ryzen 9 7940HS",
+                      "ram":  "16GB DDR5",
+                      "ram_upgradeable":  true,
+                      "gpu":  "NVIDIA RTX 4070 8GB",
+                      "storage":  "1TB NVMe SSD",
+                      "storage_upgradeable":  true,
+                      "screen_size":  "14 inch",
+                      "screen_resolution":  "2560x1600",
+                      "screen_refresh_rate":  "240Hz",
+                      "battery_wh":  68,
+                      "weight_kg":  1.84,
+                      "os":  "Windows 11 Home",
+                      "ports":  [
+                                    "USB-A x2",
+                                    "USB-C",
+                                    "HDMI 2.1",
+                                    "Audio combo"
+                                ],
+                      "thunderbolt":  false,
+                      "wifi":  "WiFi 6",
+                      "bluetooth":  "5.2"
+                  },
+        "description":  "Laptop gaming cao cấp mỏng nhẹ, vỏ nhôm, hợp người cần hiệu năng di động.",
+        "image_url":  "https://example.com/images/razer-blade-14.jpg",
+        "warranty_months":  24,
+        "tags":  [
+                     "gaming",
+                     "premium",
+                     "portable",
+                     "rgb"
+                 ],
+        "is_active":  true
     },
-    "description": "Laptop gaming cao c?p m?ng nh?, v? nh?m, h?p ng??i c?n hi?u n?ng di ??ng.",
-    "image_url": "https://example.com/images/razer-blade-14.jpg",
-    "warranty_months": 24,
-    "tags": [
-      "gaming",
-      "premium",
-      "portable",
-      "rgb"
-    ],
-    "is_active": true
-  },
-  {
-    "id": "dell-inspiron-14-5430-001",
-    "name": "Dell Inspiron 14 5430",
-    "category": "laptop",
-    "subcategory": "office",
-    "brand": "Dell",
-    "price": 16990000,
-    "original_price": 18990000,
-    "stock": 14,
-    "specs": {
-      "cpu": "Intel Core i5-1335U",
-      "ram": "16GB LPDDR5",
-      "ram_upgradeable": true,
-      "gpu": "Intel Iris Xe",
-      "storage": "512GB NVMe SSD",
-      "storage_upgradeable": true,
-      "screen_size": "14 inch",
-      "screen_resolution": "1920x1200",
-      "screen_refresh_rate": "60Hz",
-      "battery_wh": 54,
-      "weight_kg": 1.53,
-      "os": "Windows 11 Home",
-      "ports": [
-        "USB-A x2",
-        "USB-C",
-        "HDMI 2.1",
-        "Audio combo"
-      ],
-      "thunderbolt": false,
-      "wifi": "WiFi 6",
-      "bluetooth": "5.2"
+    {
+        "id":  "dell-inspiron-14-5430-001",
+        "name":  "Dell Inspiron 14 5430",
+        "category":  "laptop",
+        "subcategory":  "office",
+        "brand":  "Dell",
+        "price":  16990000,
+        "original_price":  18990000,
+        "stock":  14,
+        "specs":  {
+                      "cpu":  "Intel Core i5-1335U",
+                      "ram":  "16GB LPDDR5",
+                      "ram_upgradeable":  true,
+                      "gpu":  "Intel Iris Xe",
+                      "storage":  "512GB NVMe SSD",
+                      "storage_upgradeable":  true,
+                      "screen_size":  "14 inch",
+                      "screen_resolution":  "1920x1200",
+                      "screen_refresh_rate":  "60Hz",
+                      "battery_wh":  54,
+                      "weight_kg":  1.53,
+                      "os":  "Windows 11 Home",
+                      "ports":  [
+                                    "USB-A x2",
+                                    "USB-C",
+                                    "HDMI 2.1",
+                                    "Audio combo"
+                                ],
+                      "thunderbolt":  false,
+                      "wifi":  "WiFi 6",
+                      "bluetooth":  "5.2"
+                  },
+        "description":  "Laptop văn phòng cân bằng, màn 16:10, phù hợp học tập và làm việc hằng ngày.",
+        "image_url":  "https://example.com/images/dell-inspiron-14-5430.jpg",
+        "warranty_months":  24,
+        "tags":  [
+                     "office",
+                     "portable",
+                     "student",
+                     "work"
+                 ],
+        "is_active":  true
     },
-    "description": "Laptop v?n ph?ng c?n b?ng, m?n 16:10, ph? h?p h?c t?p v? l?m vi?c h?ng ng?y.",
-    "image_url": "https://example.com/images/dell-inspiron-14-5430.jpg",
-    "warranty_months": 24,
-    "tags": [
-      "office",
-      "portable",
-      "student",
-      "work"
-    ],
-    "is_active": true
-  },
-  {
-    "id": "hp-pavilion-14-001",
-    "name": "HP Pavilion 14 Plus",
-    "category": "laptop",
-    "subcategory": "office",
-    "brand": "HP",
-    "price": 15490000,
-    "original_price": 17490000,
-    "stock": 10,
-    "specs": {
-      "cpu": "Intel Core i5-1340P",
-      "ram": "16GB LPDDR5",
-      "ram_upgradeable": true,
-      "gpu": "Intel Iris Xe",
-      "storage": "512GB NVMe SSD",
-      "storage_upgradeable": true,
-      "screen_size": "14 inch",
-      "screen_resolution": "2240x1400",
-      "screen_refresh_rate": "60Hz",
-      "battery_wh": 51,
-      "weight_kg": 1.4,
-      "os": "Windows 11 Home",
-      "ports": [
-        "USB-A x2",
-        "USB-C",
-        "HDMI 2.1",
-        "Audio combo"
-      ],
-      "thunderbolt": false,
-      "wifi": "WiFi 6",
-      "bluetooth": "5.2"
+    {
+        "id":  "hp-pavilion-14-001",
+        "name":  "HP Pavilion 14 Plus",
+        "category":  "laptop",
+        "subcategory":  "office",
+        "brand":  "HP",
+        "price":  15490000,
+        "original_price":  17490000,
+        "stock":  10,
+        "specs":  {
+                      "cpu":  "Intel Core i5-1340P",
+                      "ram":  "16GB LPDDR5",
+                      "ram_upgradeable":  true,
+                      "gpu":  "Intel Iris Xe",
+                      "storage":  "512GB NVMe SSD",
+                      "storage_upgradeable":  true,
+                      "screen_size":  "14 inch",
+                      "screen_resolution":  "2240x1400",
+                      "screen_refresh_rate":  "60Hz",
+                      "battery_wh":  51,
+                      "weight_kg":  1.4,
+                      "os":  "Windows 11 Home",
+                      "ports":  [
+                                    "USB-A x2",
+                                    "USB-C",
+                                    "HDMI 2.1",
+                                    "Audio combo"
+                                ],
+                      "thunderbolt":  false,
+                      "wifi":  "WiFi 6",
+                      "bluetooth":  "5.2"
+                  },
+        "description":  "Ultrabook gọn nhẹ cho văn phòng, học online và di chuyển nhiều.",
+        "image_url":  "https://example.com/images/hp-pavilion-14-plus.jpg",
+        "warranty_months":  24,
+        "tags":  [
+                     "office",
+                     "portable",
+                     "ultrabook",
+                     "work"
+                 ],
+        "is_active":  true
     },
-    "description": "Ultrabook g?n nh? cho v?n ph?ng, h?c online v? di chuy?n nhi?u.",
-    "image_url": "https://example.com/images/hp-pavilion-14-plus.jpg",
-    "warranty_months": 24,
-    "tags": [
-      "office",
-      "portable",
-      "ultrabook",
-      "work"
-    ],
-    "is_active": true
-  },
-  {
-    "id": "lenovo-ideapad-slim-5-001",
-    "name": "Lenovo IdeaPad Slim 5 14",
-    "category": "laptop",
-    "subcategory": "office",
-    "brand": "Lenovo",
-    "price": 13990000,
-    "original_price": 15990000,
-    "stock": 18,
-    "specs": {
-      "cpu": "AMD Ryzen 5 7530U",
-      "ram": "16GB DDR4",
-      "ram_upgradeable": true,
-      "gpu": "AMD Radeon Graphics",
-      "storage": "512GB NVMe SSD",
-      "storage_upgradeable": true,
-      "screen_size": "14 inch",
-      "screen_resolution": "1920x1200",
-      "screen_refresh_rate": "60Hz",
-      "battery_wh": 56,
-      "weight_kg": 1.46,
-      "os": "Windows 11 Home",
-      "ports": [
-        "USB-A x2",
-        "USB-C",
-        "HDMI 2.1",
-        "Audio combo"
-      ],
-      "thunderbolt": false,
-      "wifi": "WiFi 6",
-      "bluetooth": "5.2"
+    {
+        "id":  "lenovo-ideapad-slim-5-001",
+        "name":  "Lenovo IdeaPad Slim 5 14",
+        "category":  "laptop",
+        "subcategory":  "office",
+        "brand":  "Lenovo",
+        "price":  13990000,
+        "original_price":  15990000,
+        "stock":  18,
+        "specs":  {
+                      "cpu":  "AMD Ryzen 5 7530U",
+                      "ram":  "16GB DDR4",
+                      "ram_upgradeable":  true,
+                      "gpu":  "AMD Radeon Graphics",
+                      "storage":  "512GB NVMe SSD",
+                      "storage_upgradeable":  true,
+                      "screen_size":  "14 inch",
+                      "screen_resolution":  "1920x1200",
+                      "screen_refresh_rate":  "60Hz",
+                      "battery_wh":  56,
+                      "weight_kg":  1.46,
+                      "os":  "Windows 11 Home",
+                      "ports":  [
+                                    "USB-A x2",
+                                    "USB-C",
+                                    "HDMI 2.1",
+                                    "Audio combo"
+                                ],
+                      "thunderbolt":  false,
+                      "wifi":  "WiFi 6",
+                      "bluetooth":  "5.2"
+                  },
+        "description":  "Laptop mỏng nhẹ giá tốt cho sinh viên, văn phòng và giải trí cơ bản.",
+        "image_url":  "https://example.com/images/lenovo-ideapad-slim-5.jpg",
+        "warranty_months":  24,
+        "tags":  [
+                     "office",
+                     "portable",
+                     "budget",
+                     "student"
+                 ],
+        "is_active":  true
     },
-    "description": "Laptop m?ng nh? gi? t?t cho sinh vi?n, v?n ph?ng v? gi?i tr? c? b?n.",
-    "image_url": "https://example.com/images/lenovo-ideapad-slim-5.jpg",
-    "warranty_months": 24,
-    "tags": [
-      "office",
-      "portable",
-      "budget",
-      "student"
-    ],
-    "is_active": true
-  },
-  {
-    "id": "asus-vivobook-15-001",
-    "name": "ASUS Vivobook 15 OLED",
-    "category": "laptop",
-    "subcategory": "office",
-    "brand": "ASUS",
-    "price": 14990000,
-    "original_price": 16990000,
-    "stock": 16,
-    "specs": {
-      "cpu": "Intel Core i5-1335U",
-      "ram": "16GB DDR4",
-      "ram_upgradeable": true,
-      "gpu": "Intel Iris Xe",
-      "storage": "512GB NVMe SSD",
-      "storage_upgradeable": true,
-      "screen_size": "15.6 inch",
-      "screen_resolution": "1920x1080",
-      "screen_refresh_rate": "60Hz",
-      "battery_wh": 50,
-      "weight_kg": 1.7,
-      "os": "Windows 11 Home",
-      "ports": [
-        "USB-A x2",
-        "USB-C",
-        "HDMI 2.1",
-        "Audio combo"
-      ],
-      "thunderbolt": false,
-      "wifi": "WiFi 6",
-      "bluetooth": "5.2"
+    {
+        "id":  "asus-vivobook-15-001",
+        "name":  "ASUS Vivobook 15 OLED",
+        "category":  "laptop",
+        "subcategory":  "office",
+        "brand":  "ASUS",
+        "price":  14990000,
+        "original_price":  16990000,
+        "stock":  16,
+        "specs":  {
+                      "cpu":  "Intel Core i5-1335U",
+                      "ram":  "16GB DDR4",
+                      "ram_upgradeable":  true,
+                      "gpu":  "Intel Iris Xe",
+                      "storage":  "512GB NVMe SSD",
+                      "storage_upgradeable":  true,
+                      "screen_size":  "15.6 inch",
+                      "screen_resolution":  "1920x1080",
+                      "screen_refresh_rate":  "60Hz",
+                      "battery_wh":  50,
+                      "weight_kg":  1.7,
+                      "os":  "Windows 11 Home",
+                      "ports":  [
+                                    "USB-A x2",
+                                    "USB-C",
+                                    "HDMI 2.1",
+                                    "Audio combo"
+                                ],
+                      "thunderbolt":  false,
+                      "wifi":  "WiFi 6",
+                      "bluetooth":  "5.2"
+                  },
+        "description":  "Màn OLED đẹp, phù hợp làm việc văn phòng, học tập và xem nội dung.",
+        "image_url":  "https://example.com/images/asus-vivobook-15-oled.jpg",
+        "warranty_months":  24,
+        "tags":  [
+                     "office",
+                     "budget",
+                     "student",
+                     "work"
+                 ],
+        "is_active":  true
     },
-    "description": "M?n OLED ??p, ph? h?p l?m vi?c v?n ph?ng, h?c t?p v? xem n?i dung.",
-    "image_url": "https://example.com/images/asus-vivobook-15-oled.jpg",
-    "warranty_months": 24,
-    "tags": [
-      "office",
-      "budget",
-      "student",
-      "work"
-    ],
-    "is_active": true
-  },
-  {
-    "id": "acer-swift-go-14-001",
-    "name": "Acer Swift Go 14 OLED",
-    "category": "laptop",
-    "subcategory": "ultrabook",
-    "brand": "Acer",
-    "price": 18990000,
-    "original_price": 20990000,
-    "stock": 7,
-    "specs": {
-      "cpu": "Intel Core Ultra 5 125H",
-      "ram": "16GB LPDDR5X",
-      "ram_upgradeable": true,
-      "gpu": "Intel Arc Graphics",
-      "storage": "512GB NVMe SSD",
-      "storage_upgradeable": true,
-      "screen_size": "14 inch",
-      "screen_resolution": "2880x1800",
-      "screen_refresh_rate": "90Hz",
-      "battery_wh": 65,
-      "weight_kg": 1.32,
-      "os": "Windows 11 Home",
-      "ports": [
-        "USB-A x2",
-        "USB-C",
-        "HDMI 2.1",
-        "Audio combo"
-      ],
-      "thunderbolt": false,
-      "wifi": "WiFi 6",
-      "bluetooth": "5.2"
+    {
+        "id":  "acer-swift-go-14-001",
+        "name":  "Acer Swift Go 14 OLED",
+        "category":  "laptop",
+        "subcategory":  "ultrabook",
+        "brand":  "Acer",
+        "price":  18990000,
+        "original_price":  20990000,
+        "stock":  7,
+        "specs":  {
+                      "cpu":  "Intel Core Ultra 5 125H",
+                      "ram":  "16GB LPDDR5X",
+                      "ram_upgradeable":  true,
+                      "gpu":  "Intel Arc Graphics",
+                      "storage":  "512GB NVMe SSD",
+                      "storage_upgradeable":  true,
+                      "screen_size":  "14 inch",
+                      "screen_resolution":  "2880x1800",
+                      "screen_refresh_rate":  "90Hz",
+                      "battery_wh":  65,
+                      "weight_kg":  1.32,
+                      "os":  "Windows 11 Home",
+                      "ports":  [
+                                    "USB-A x2",
+                                    "USB-C",
+                                    "HDMI 2.1",
+                                    "Audio combo"
+                                ],
+                      "thunderbolt":  false,
+                      "wifi":  "WiFi 6",
+                      "bluetooth":  "5.2"
+                  },
+        "description":  "Ultrabook màn OLED sắc nét, nhẹ, hợp làm việc di động và sáng tạo nội dung nhẹ.",
+        "image_url":  "https://example.com/images/acer-swift-go-14-oled.jpg",
+        "warranty_months":  24,
+        "tags":  [
+                     "office",
+                     "portable",
+                     "ultrabook",
+                     "premium",
+                     "creator"
+                 ],
+        "is_active":  true
     },
-    "description": "Ultrabook m?n OLED s?c n?t, nh?, h?p l?m vi?c di ??ng v? s?ng t?o n?i dung nh?.",
-    "image_url": "https://example.com/images/acer-swift-go-14-oled.jpg",
-    "warranty_months": 24,
-    "tags": [
-      "office",
-      "portable",
-      "ultrabook",
-      "premium",
-      "creator"
-    ],
-    "is_active": true
-  },
-  {
-    "id": "lenovo-yoga-slim-7-001",
-    "name": "Lenovo Yoga Slim 7",
-    "category": "laptop",
-    "subcategory": "ultrabook",
-    "brand": "Lenovo",
-    "price": 22990000,
-    "original_price": 24990000,
-    "stock": 5,
-    "specs": {
-      "cpu": "AMD Ryzen 7 7840S",
-      "ram": "16GB LPDDR5X",
-      "ram_upgradeable": true,
-      "gpu": "AMD Radeon 780M",
-      "storage": "1TB NVMe SSD",
-      "storage_upgradeable": true,
-      "screen_size": "14.5 inch",
-      "screen_resolution": "2944x1840",
-      "screen_refresh_rate": "90Hz",
-      "battery_wh": 70,
-      "weight_kg": 1.35,
-      "os": "Windows 11 Home",
-      "ports": [
-        "USB-A x2",
-        "USB-C",
-        "HDMI 2.1",
-        "Audio combo"
-      ],
-      "thunderbolt": false,
-      "wifi": "WiFi 6",
-      "bluetooth": "5.2"
+    {
+        "id":  "lenovo-yoga-slim-7-001",
+        "name":  "Lenovo Yoga Slim 7",
+        "category":  "laptop",
+        "subcategory":  "ultrabook",
+        "brand":  "Lenovo",
+        "price":  22990000,
+        "original_price":  24990000,
+        "stock":  5,
+        "specs":  {
+                      "cpu":  "AMD Ryzen 7 7840S",
+                      "ram":  "16GB LPDDR5X",
+                      "ram_upgradeable":  true,
+                      "gpu":  "AMD Radeon 780M",
+                      "storage":  "1TB NVMe SSD",
+                      "storage_upgradeable":  true,
+                      "screen_size":  "14.5 inch",
+                      "screen_resolution":  "2944x1840",
+                      "screen_refresh_rate":  "90Hz",
+                      "battery_wh":  70,
+                      "weight_kg":  1.35,
+                      "os":  "Windows 11 Home",
+                      "ports":  [
+                                    "USB-A x2",
+                                    "USB-C",
+                                    "HDMI 2.1",
+                                    "Audio combo"
+                                ],
+                      "thunderbolt":  false,
+                      "wifi":  "WiFi 6",
+                      "bluetooth":  "5.2"
+                  },
+        "description":  "Ultrabook cao cấp, pin tốt, phù hợp người làm việc thường xuyên di chuyển.",
+        "image_url":  "https://example.com/images/lenovo-yoga-slim-7.jpg",
+        "warranty_months":  24,
+        "tags":  [
+                     "office",
+                     "portable",
+                     "ultrabook",
+                     "premium"
+                 ],
+        "is_active":  true
     },
-    "description": "Ultrabook cao c?p, pin t?t, ph? h?p ng??i l?m vi?c th??ng xuy?n di chuy?n.",
-    "image_url": "https://example.com/images/lenovo-yoga-slim-7.jpg",
-    "warranty_months": 24,
-    "tags": [
-      "office",
-      "portable",
-      "ultrabook",
-      "premium"
-    ],
-    "is_active": true
-  },
-  {
-    "id": "dell-xps-13-9340-001",
-    "name": "Dell XPS 13 9340",
-    "category": "laptop",
-    "subcategory": "ultrabook",
-    "brand": "Dell",
-    "price": 24990000,
-    "original_price": 27990000,
-    "stock": 3,
-    "specs": {
-      "cpu": "Intel Core Ultra 7 155H",
-      "ram": "16GB LPDDR5X",
-      "ram_upgradeable": true,
-      "gpu": "Intel Arc Graphics",
-      "storage": "512GB NVMe SSD",
-      "storage_upgradeable": true,
-      "screen_size": "13.4 inch",
-      "screen_resolution": "1920x1200",
-      "screen_refresh_rate": "120Hz",
-      "battery_wh": 55,
-      "weight_kg": 1.19,
-      "os": "Windows 11 Home",
-      "ports": [
-        "USB-A x2",
-        "USB-C",
-        "HDMI 2.1",
-        "Audio combo"
-      ],
-      "thunderbolt": true,
-      "wifi": "WiFi 6",
-      "bluetooth": "5.2"
+    {
+        "id":  "dell-xps-13-9340-001",
+        "name":  "Dell XPS 13 9340",
+        "category":  "laptop",
+        "subcategory":  "ultrabook",
+        "brand":  "Dell",
+        "price":  24990000,
+        "original_price":  27990000,
+        "stock":  3,
+        "specs":  {
+                      "cpu":  "Intel Core Ultra 7 155H",
+                      "ram":  "16GB LPDDR5X",
+                      "ram_upgradeable":  true,
+                      "gpu":  "Intel Arc Graphics",
+                      "storage":  "512GB NVMe SSD",
+                      "storage_upgradeable":  true,
+                      "screen_size":  "13.4 inch",
+                      "screen_resolution":  "1920x1200",
+                      "screen_refresh_rate":  "120Hz",
+                      "battery_wh":  55,
+                      "weight_kg":  1.19,
+                      "os":  "Windows 11 Home",
+                      "ports":  [
+                                    "USB-A x2",
+                                    "USB-C",
+                                    "HDMI 2.1",
+                                    "Audio combo"
+                                ],
+                      "thunderbolt":  true,
+                      "wifi":  "WiFi 6",
+                      "bluetooth":  "5.2"
+                  },
+        "description":  "Ultrabook doanh nhân siêu gọn, hoàn thiện cao, phù hợp làm việc chuyên nghiệp.",
+        "image_url":  "https://example.com/images/dell-xps-13-9340.jpg",
+        "warranty_months":  24,
+        "tags":  [
+                     "office",
+                     "portable",
+                     "ultrabook",
+                     "premium"
+                 ],
+        "is_active":  true
     },
-    "description": "Ultrabook doanh nh?n si?u g?n, ho?n thi?n cao, ph? h?p l?m vi?c chuy?n nghi?p.",
-    "image_url": "https://example.com/images/dell-xps-13-9340.jpg",
-    "warranty_months": 24,
-    "tags": [
-      "office",
-      "portable",
-      "ultrabook",
-      "premium"
-    ],
-    "is_active": true
-  },
-  {
-    "id": "hp-envy-x360-14-001",
-    "name": "HP Envy x360 14",
-    "category": "laptop",
-    "subcategory": "ultrabook",
-    "brand": "HP",
-    "price": 20990000,
-    "original_price": 22990000,
-    "stock": 6,
-    "specs": {
-      "cpu": "Intel Core Ultra 5 125U",
-      "ram": "16GB LPDDR5",
-      "ram_upgradeable": true,
-      "gpu": "Intel Graphics",
-      "storage": "512GB NVMe SSD",
-      "storage_upgradeable": true,
-      "screen_size": "14 inch",
-      "screen_resolution": "1920x1200",
-      "screen_refresh_rate": "60Hz",
-      "battery_wh": 59,
-      "weight_kg": 1.39,
-      "os": "Windows 11 Home",
-      "ports": [
-        "USB-A x2",
-        "USB-C",
-        "HDMI 2.1",
-        "Audio combo"
-      ],
-      "thunderbolt": false,
-      "wifi": "WiFi 6",
-      "bluetooth": "5.2"
+    {
+        "id":  "hp-envy-x360-14-001",
+        "name":  "HP Envy x360 14",
+        "category":  "laptop",
+        "subcategory":  "ultrabook",
+        "brand":  "HP",
+        "price":  20990000,
+        "original_price":  22990000,
+        "stock":  6,
+        "specs":  {
+                      "cpu":  "Intel Core Ultra 5 125U",
+                      "ram":  "16GB LPDDR5",
+                      "ram_upgradeable":  true,
+                      "gpu":  "Intel Graphics",
+                      "storage":  "512GB NVMe SSD",
+                      "storage_upgradeable":  true,
+                      "screen_size":  "14 inch",
+                      "screen_resolution":  "1920x1200",
+                      "screen_refresh_rate":  "60Hz",
+                      "battery_wh":  59,
+                      "weight_kg":  1.39,
+                      "os":  "Windows 11 Home",
+                      "ports":  [
+                                    "USB-A x2",
+                                    "USB-C",
+                                    "HDMI 2.1",
+                                    "Audio combo"
+                                ],
+                      "thunderbolt":  false,
+                      "wifi":  "WiFi 6",
+                      "bluetooth":  "5.2"
+                  },
+        "description":  "Laptop 2-in-1 linh hoạt cho ghi chú, trình bày và làm việc văn phòng.",
+        "image_url":  "https://example.com/images/hp-envy-x360-14.jpg",
+        "warranty_months":  24,
+        "tags":  [
+                     "office",
+                     "portable",
+                     "ultrabook",
+                     "premium",
+                     "student"
+                 ],
+        "is_active":  true
     },
-    "description": "Laptop 2-in-1 linh ho?t cho ghi ch?, tr?nh b?y v? l?m vi?c v?n ph?ng.",
-    "image_url": "https://example.com/images/hp-envy-x360-14.jpg",
-    "warranty_months": 24,
-    "tags": [
-      "office",
-      "portable",
-      "ultrabook",
-      "premium",
-      "student"
-    ],
-    "is_active": true
-  },
-  {
-    "id": "asus-zenbook-14-oled-001",
-    "name": "ASUS Zenbook 14 OLED UX3405",
-    "category": "laptop",
-    "subcategory": "ultrabook",
-    "brand": "ASUS",
-    "price": 23990000,
-    "original_price": 25990000,
-    "stock": 8,
-    "specs": {
-      "cpu": "Intel Core Ultra 7 155H",
-      "ram": "16GB LPDDR5X",
-      "ram_upgradeable": true,
-      "gpu": "Intel Arc Graphics",
-      "storage": "1TB NVMe SSD",
-      "storage_upgradeable": true,
-      "screen_size": "14 inch",
-      "screen_resolution": "2880x1800",
-      "screen_refresh_rate": "120Hz",
-      "battery_wh": 75,
-      "weight_kg": 1.2,
-      "os": "Windows 11 Home",
-      "ports": [
-        "USB-A x2",
-        "USB-C",
-        "HDMI 2.1",
-        "Audio combo"
-      ],
-      "thunderbolt": true,
-      "wifi": "WiFi 6",
-      "bluetooth": "5.2"
+    {
+        "id":  "asus-zenbook-14-oled-001",
+        "name":  "ASUS Zenbook 14 OLED UX3405",
+        "category":  "laptop",
+        "subcategory":  "ultrabook",
+        "brand":  "ASUS",
+        "price":  23990000,
+        "original_price":  25990000,
+        "stock":  8,
+        "specs":  {
+                      "cpu":  "Intel Core Ultra 7 155H",
+                      "ram":  "16GB LPDDR5X",
+                      "ram_upgradeable":  true,
+                      "gpu":  "Intel Arc Graphics",
+                      "storage":  "1TB NVMe SSD",
+                      "storage_upgradeable":  true,
+                      "screen_size":  "14 inch",
+                      "screen_resolution":  "2880x1800",
+                      "screen_refresh_rate":  "120Hz",
+                      "battery_wh":  75,
+                      "weight_kg":  1.2,
+                      "os":  "Windows 11 Home",
+                      "ports":  [
+                                    "USB-A x2",
+                                    "USB-C",
+                                    "HDMI 2.1",
+                                    "Audio combo"
+                                ],
+                      "thunderbolt":  true,
+                      "wifi":  "WiFi 6",
+                      "bluetooth":  "5.2"
+                  },
+        "description":  "Ultrabook OLED cao cấp, nhẹ, pin tốt, hợp công việc và sáng tạo nội dung.",
+        "image_url":  "https://example.com/images/asus-zenbook-14-oled.jpg",
+        "warranty_months":  24,
+        "tags":  [
+                     "office",
+                     "portable",
+                     "ultrabook",
+                     "premium",
+                     "creator"
+                 ],
+        "is_active":  true
     },
-    "description": "Ultrabook OLED cao c?p, nh?, pin t?t, h?p c?ng vi?c v? s?ng t?o n?i dung.",
-    "image_url": "https://example.com/images/asus-zenbook-14-oled.jpg",
-    "warranty_months": 24,
-    "tags": [
-      "office",
-      "portable",
-      "ultrabook",
-      "premium",
-      "creator"
-    ],
-    "is_active": true
-  },
-  {
-    "id": "acer-aspire-5-001",
-    "name": "Acer Aspire 5 A515",
-    "category": "laptop",
-    "subcategory": "office",
-    "brand": "Acer",
-    "price": 8990000,
-    "original_price": 10990000,
-    "stock": 20,
-    "specs": {
-      "cpu": "Intel Core i3-1315U",
-      "ram": "8GB DDR4",
-      "ram_upgradeable": true,
-      "gpu": "Intel UHD Graphics",
-      "storage": "512GB NVMe SSD",
-      "storage_upgradeable": true,
-      "screen_size": "15.6 inch",
-      "screen_resolution": "1920x1080",
-      "screen_refresh_rate": "60Hz",
-      "battery_wh": 48,
-      "weight_kg": 1.78,
-      "os": "Windows 11 Home",
-      "ports": [
-        "USB-A x2",
-        "USB-C",
-        "HDMI 2.1",
-        "Audio combo"
-      ],
-      "thunderbolt": false,
-      "wifi": "WiFi 6",
-      "bluetooth": "5.2"
+    {
+        "id":  "acer-aspire-5-001",
+        "name":  "Acer Aspire 5 A515",
+        "category":  "laptop",
+        "subcategory":  "office",
+        "brand":  "Acer",
+        "price":  8990000,
+        "original_price":  10990000,
+        "stock":  20,
+        "specs":  {
+                      "cpu":  "Intel Core i3-1315U",
+                      "ram":  "8GB DDR4",
+                      "ram_upgradeable":  true,
+                      "gpu":  "Intel UHD Graphics",
+                      "storage":  "512GB NVMe SSD",
+                      "storage_upgradeable":  true,
+                      "screen_size":  "15.6 inch",
+                      "screen_resolution":  "1920x1080",
+                      "screen_refresh_rate":  "60Hz",
+                      "battery_wh":  48,
+                      "weight_kg":  1.78,
+                      "os":  "Windows 11 Home",
+                      "ports":  [
+                                    "USB-A x2",
+                                    "USB-C",
+                                    "HDMI 2.1",
+                                    "Audio combo"
+                                ],
+                      "thunderbolt":  false,
+                      "wifi":  "WiFi 6",
+                      "bluetooth":  "5.2"
+                  },
+        "description":  "Laptop văn phòng phổ thông, giá dễ tiếp cận cho học tập và nhập liệu.",
+        "image_url":  "https://example.com/images/acer-aspire-5-a515.jpg",
+        "warranty_months":  24,
+        "tags":  [
+                     "office",
+                     "budget",
+                     "student"
+                 ],
+        "is_active":  true
     },
-    "description": "Laptop v?n ph?ng ph? th?ng, gi? d? ti?p c?n cho h?c t?p v? nh?p li?u.",
-    "image_url": "https://example.com/images/acer-aspire-5-a515.jpg",
-    "warranty_months": 24,
-    "tags": [
-      "office",
-      "budget",
-      "student"
-    ],
-    "is_active": true
-  },
-  {
-    "id": "lg-27up850n-001",
-    "name": "LG 27UP850N-W 27 inch 4K",
-    "category": "monitor",
-    "subcategory": "office",
-    "brand": "LG",
-    "price": 8990000,
-    "original_price": 9990000,
-    "stock": 9,
-    "specs": {
-      "screen_size": "27 inch",
-      "screen_resolution": "3840x2160",
-      "screen_refresh_rate": "60Hz",
-      "panel_type": "IPS",
-      "response_time": "5ms",
-      "ports": [
-        "USB-C 96W",
-        "HDMI x2",
-        "DisplayPort"
-      ],
-      "features": [
-        "low-blue-light",
-        "flicker-free",
-        "height-adjustable"
-      ]
+    {
+        "id":  "lg-27up850n-001",
+        "name":  "LG 27UP850N-W 27 inch 4K",
+        "category":  "monitor",
+        "subcategory":  "office",
+        "brand":  "LG",
+        "price":  8990000,
+        "original_price":  9990000,
+        "stock":  9,
+        "specs":  {
+                      "screen_size":  "27 inch",
+                      "screen_resolution":  "3840x2160",
+                      "screen_refresh_rate":  "60Hz",
+                      "panel_type":  "IPS",
+                      "response_time":  "5ms",
+                      "ports":  [
+                                    "USB-C 96W",
+                                    "HDMI x2",
+                                    "DisplayPort"
+                                ],
+                      "features":  [
+                                       "low-blue-light",
+                                       "flicker-free",
+                                       "height-adjustable"
+                                   ]
+                  },
+        "description":  "Màn hình 4K USB-C cho làm việc, thiết kế và laptop docking.",
+        "image_url":  "https://example.com/images/lg-27up850n.jpg",
+        "warranty_months":  24,
+        "tags":  [
+                     "office",
+                     "4k",
+                     "premium",
+                     "low-blue-light",
+                     "flicker-free"
+                 ],
+        "is_active":  true
     },
-    "description": "M?n h?nh 4K USB-C cho l?m vi?c, thi?t k? v? laptop docking.",
-    "image_url": "https://example.com/images/lg-27up850n.jpg",
-    "warranty_months": 24,
-    "tags": [
-      "office",
-      "4k",
-      "premium",
-      "low-blue-light",
-      "flicker-free"
-    ],
-    "is_active": true
-  },
-  {
-    "id": "samsung-odyssey-g5-27-001",
-    "name": "Samsung Odyssey G5 27 inch",
-    "category": "monitor",
-    "subcategory": "gaming",
-    "brand": "Samsung",
-    "price": 6990000,
-    "original_price": 7990000,
-    "stock": 7,
-    "specs": {
-      "screen_size": "27 inch",
-      "screen_resolution": "2560x1440",
-      "screen_refresh_rate": "165Hz",
-      "panel_type": "VA",
-      "response_time": "1ms",
-      "ports": [
-        "HDMI",
-        "DisplayPort"
-      ],
-      "features": [
-        "adaptive-sync",
-        "curved"
-      ]
+    {
+        "id":  "samsung-odyssey-g5-27-001",
+        "name":  "Samsung Odyssey G5 27 inch",
+        "category":  "monitor",
+        "subcategory":  "gaming",
+        "brand":  "Samsung",
+        "price":  6990000,
+        "original_price":  7990000,
+        "stock":  7,
+        "specs":  {
+                      "screen_size":  "27 inch",
+                      "screen_resolution":  "2560x1440",
+                      "screen_refresh_rate":  "165Hz",
+                      "panel_type":  "VA",
+                      "response_time":  "1ms",
+                      "ports":  [
+                                    "HDMI",
+                                    "DisplayPort"
+                                ],
+                      "features":  [
+                                       "adaptive-sync",
+                                       "curved"
+                                   ]
+                  },
+        "description":  "Màn hình gaming QHD tần số quét cao, phù hợp eSports và game nhập vai.",
+        "image_url":  "https://example.com/images/samsung-odyssey-g5-27.jpg",
+        "warranty_months":  24,
+        "tags":  [
+                     "gaming",
+                     "144hz",
+                     "premium"
+                 ],
+        "is_active":  true
     },
-    "description": "M?n h?nh gaming QHD t?n s? qu?t cao, ph? h?p eSports v? game nh?p vai.",
-    "image_url": "https://example.com/images/samsung-odyssey-g5-27.jpg",
-    "warranty_months": 24,
-    "tags": [
-      "gaming",
-      "144hz",
-      "premium"
-    ],
-    "is_active": true
-  },
-  {
-    "id": "dell-s2722qc-001",
-    "name": "Dell S2722QC 27 inch 4K USB-C",
-    "category": "monitor",
-    "subcategory": "office",
-    "brand": "Dell",
-    "price": 8490000,
-    "original_price": 9490000,
-    "stock": 11,
-    "specs": {
-      "screen_size": "27 inch",
-      "screen_resolution": "3840x2160",
-      "screen_refresh_rate": "60Hz",
-      "panel_type": "IPS",
-      "response_time": "4ms",
-      "ports": [
-        "USB-C 65W",
-        "HDMI x2",
-        "USB hub"
-      ],
-      "features": [
-        "low-blue-light",
-        "flicker-free"
-      ]
+    {
+        "id":  "dell-s2722qc-001",
+        "name":  "Dell S2722QC 27 inch 4K USB-C",
+        "category":  "monitor",
+        "subcategory":  "office",
+        "brand":  "Dell",
+        "price":  8490000,
+        "original_price":  9490000,
+        "stock":  11,
+        "specs":  {
+                      "screen_size":  "27 inch",
+                      "screen_resolution":  "3840x2160",
+                      "screen_refresh_rate":  "60Hz",
+                      "panel_type":  "IPS",
+                      "response_time":  "4ms",
+                      "ports":  [
+                                    "USB-C 65W",
+                                    "HDMI x2",
+                                    "USB hub"
+                                ],
+                      "features":  [
+                                       "low-blue-light",
+                                       "flicker-free"
+                                   ]
+                  },
+        "description":  "Màn hình 4K văn phòng, chữ sắc nét, hợp làm việc lâu ban đêm.",
+        "image_url":  "https://example.com/images/dell-s2722qc.jpg",
+        "warranty_months":  24,
+        "tags":  [
+                     "office",
+                     "4k",
+                     "low-blue-light",
+                     "flicker-free"
+                 ],
+        "is_active":  true
     },
-    "description": "M?n h?nh 4K v?n ph?ng, ch? s?c n?t, h?p l?m vi?c l?u ban ??m.",
-    "image_url": "https://example.com/images/dell-s2722qc.jpg",
-    "warranty_months": 24,
-    "tags": [
-      "office",
-      "4k",
-      "low-blue-light",
-      "flicker-free"
-    ],
-    "is_active": true
-  },
-  {
-    "id": "asus-tuf-vg249q3a-001",
-    "name": "ASUS TUF Gaming VG249Q3A",
-    "category": "monitor",
-    "subcategory": "gaming",
-    "brand": "ASUS",
-    "price": 3990000,
-    "original_price": 4590000,
-    "stock": 15,
-    "specs": {
-      "screen_size": "23.8 inch",
-      "screen_resolution": "1920x1080",
-      "screen_refresh_rate": "180Hz",
-      "panel_type": "IPS",
-      "response_time": "1ms",
-      "ports": [
-        "HDMI x2",
-        "DisplayPort"
-      ],
-      "features": [
-        "adaptive-sync",
-        "low-blue-light",
-        "flicker-free"
-      ]
+    {
+        "id":  "asus-tuf-vg249q3a-001",
+        "name":  "ASUS TUF Gaming VG249Q3A",
+        "category":  "monitor",
+        "subcategory":  "gaming",
+        "brand":  "ASUS",
+        "price":  3990000,
+        "original_price":  4590000,
+        "stock":  15,
+        "specs":  {
+                      "screen_size":  "23.8 inch",
+                      "screen_resolution":  "1920x1080",
+                      "screen_refresh_rate":  "180Hz",
+                      "panel_type":  "IPS",
+                      "response_time":  "1ms",
+                      "ports":  [
+                                    "HDMI x2",
+                                    "DisplayPort"
+                                ],
+                      "features":  [
+                                       "adaptive-sync",
+                                       "low-blue-light",
+                                       "flicker-free"
+                                   ]
+                  },
+        "description":  "Màn hình gaming FHD nhanh, giá tốt cho eSports.",
+        "image_url":  "https://example.com/images/asus-tuf-vg249q3a.jpg",
+        "warranty_months":  24,
+        "tags":  [
+                     "gaming",
+                     "144hz",
+                     "budget",
+                     "low-blue-light",
+                     "flicker-free"
+                 ],
+        "is_active":  true
     },
-    "description": "M?n h?nh gaming FHD nhanh, gi? t?t cho eSports.",
-    "image_url": "https://example.com/images/asus-tuf-vg249q3a.jpg",
-    "warranty_months": 24,
-    "tags": [
-      "gaming",
-      "144hz",
-      "budget",
-      "low-blue-light",
-      "flicker-free"
-    ],
-    "is_active": true
-  },
-  {
-    "id": "msi-g274qpf-001",
-    "name": "MSI G274QPF 27 inch Rapid IPS",
-    "category": "monitor",
-    "subcategory": "gaming",
-    "brand": "MSI",
-    "price": 6490000,
-    "original_price": 7490000,
-    "stock": 4,
-    "specs": {
-      "screen_size": "27 inch",
-      "screen_resolution": "2560x1440",
-      "screen_refresh_rate": "170Hz",
-      "panel_type": "Rapid IPS",
-      "response_time": "1ms",
-      "ports": [
-        "HDMI x2",
-        "DisplayPort"
-      ],
-      "features": [
-        "adaptive-sync",
-        "height-adjustable"
-      ]
+    {
+        "id":  "msi-g274qpf-001",
+        "name":  "MSI G274QPF 27 inch Rapid IPS",
+        "category":  "monitor",
+        "subcategory":  "gaming",
+        "brand":  "MSI",
+        "price":  6490000,
+        "original_price":  7490000,
+        "stock":  4,
+        "specs":  {
+                      "screen_size":  "27 inch",
+                      "screen_resolution":  "2560x1440",
+                      "screen_refresh_rate":  "170Hz",
+                      "panel_type":  "Rapid IPS",
+                      "response_time":  "1ms",
+                      "ports":  [
+                                    "HDMI x2",
+                                    "DisplayPort"
+                                ],
+                      "features":  [
+                                       "adaptive-sync",
+                                       "height-adjustable"
+                                   ]
+                  },
+        "description":  "Màn hình QHD 170Hz cân bằng cho chơi game và làm việc.",
+        "image_url":  "https://example.com/images/msi-g274qpf.jpg",
+        "warranty_months":  24,
+        "tags":  [
+                     "gaming",
+                     "144hz",
+                     "premium"
+                 ],
+        "is_active":  true
     },
-    "description": "M?n h?nh QHD 170Hz c?n b?ng cho ch?i game v? l?m vi?c.",
-    "image_url": "https://example.com/images/msi-g274qpf.jpg",
-    "warranty_months": 24,
-    "tags": [
-      "gaming",
-      "144hz",
-      "premium"
-    ],
-    "is_active": true
-  },
-  {
-    "id": "hp-m24fwa-001",
-    "name": "HP M24fwa 23.8 inch",
-    "category": "monitor",
-    "subcategory": "office",
-    "brand": "HP",
-    "price": 3290000,
-    "original_price": 3790000,
-    "stock": 22,
-    "specs": {
-      "screen_size": "23.8 inch",
-      "screen_resolution": "1920x1080",
-      "screen_refresh_rate": "75Hz",
-      "panel_type": "IPS",
-      "response_time": "5ms",
-      "ports": [
-        "HDMI",
-        "VGA"
-      ],
-      "features": [
-        "low-blue-light",
-        "flicker-free",
-        "built-in-speaker"
-      ]
+    {
+        "id":  "hp-m24fwa-001",
+        "name":  "HP M24fwa 23.8 inch",
+        "category":  "monitor",
+        "subcategory":  "office",
+        "brand":  "HP",
+        "price":  3290000,
+        "original_price":  3790000,
+        "stock":  22,
+        "specs":  {
+                      "screen_size":  "23.8 inch",
+                      "screen_resolution":  "1920x1080",
+                      "screen_refresh_rate":  "75Hz",
+                      "panel_type":  "IPS",
+                      "response_time":  "5ms",
+                      "ports":  [
+                                    "HDMI",
+                                    "VGA"
+                                ],
+                      "features":  [
+                                       "low-blue-light",
+                                       "flicker-free",
+                                       "built-in-speaker"
+                                   ]
+                  },
+        "description":  "Màn hình văn phòng giá tốt, viền mỏng, có loa tích hợp.",
+        "image_url":  "https://example.com/images/hp-m24fwa.jpg",
+        "warranty_months":  24,
+        "tags":  [
+                     "office",
+                     "budget",
+                     "low-blue-light",
+                     "flicker-free"
+                 ],
+        "is_active":  true
     },
-    "description": "M?n h?nh v?n ph?ng gi? t?t, vi?n m?ng, c? loa t?ch h?p.",
-    "image_url": "https://example.com/images/hp-m24fwa.jpg",
-    "warranty_months": 24,
-    "tags": [
-      "office",
-      "budget",
-      "low-blue-light",
-      "flicker-free"
-    ],
-    "is_active": true
-  },
-  {
-    "id": "lg-ultragear-27gp850-001",
-    "name": "LG UltraGear 27GP850-B",
-    "category": "monitor",
-    "subcategory": "gaming",
-    "brand": "LG",
-    "price": 7990000,
-    "original_price": 8990000,
-    "stock": 5,
-    "specs": {
-      "screen_size": "27 inch",
-      "screen_resolution": "2560x1440",
-      "screen_refresh_rate": "180Hz",
-      "panel_type": "Nano IPS",
-      "response_time": "1ms",
-      "ports": [
-        "HDMI x2",
-        "DisplayPort"
-      ],
-      "features": [
-        "adaptive-sync",
-        "wide-color"
-      ]
+    {
+        "id":  "lg-ultragear-27gp850-001",
+        "name":  "LG UltraGear 27GP850-B",
+        "category":  "monitor",
+        "subcategory":  "gaming",
+        "brand":  "LG",
+        "price":  7990000,
+        "original_price":  8990000,
+        "stock":  5,
+        "specs":  {
+                      "screen_size":  "27 inch",
+                      "screen_resolution":  "2560x1440",
+                      "screen_refresh_rate":  "180Hz",
+                      "panel_type":  "Nano IPS",
+                      "response_time":  "1ms",
+                      "ports":  [
+                                    "HDMI x2",
+                                    "DisplayPort"
+                                ],
+                      "features":  [
+                                       "adaptive-sync",
+                                       "wide-color"
+                                   ]
+                  },
+        "description":  "Màn hình gaming QHD màu đẹp, hợp cả game và chỉnh ảnh bán chuyên.",
+        "image_url":  "https://example.com/images/lg-27gp850.jpg",
+        "warranty_months":  24,
+        "tags":  [
+                     "gaming",
+                     "144hz",
+                     "premium",
+                     "creator"
+                 ],
+        "is_active":  true
     },
-    "description": "M?n h?nh gaming QHD m?u ??p, h?p c? game v? ch?nh ?nh b?n chuy?n.",
-    "image_url": "https://example.com/images/lg-27gp850.jpg",
-    "warranty_months": 24,
-    "tags": [
-      "gaming",
-      "144hz",
-      "premium",
-      "creator"
-    ],
-    "is_active": true
-  },
-  {
-    "id": "samsung-viewfinity-s8-001",
-    "name": "Samsung ViewFinity S8 32 inch 4K",
-    "category": "monitor",
-    "subcategory": "office",
-    "brand": "Samsung",
-    "price": 11990000,
-    "original_price": 13990000,
-    "stock": 6,
-    "specs": {
-      "screen_size": "32 inch",
-      "screen_resolution": "3840x2160",
-      "screen_refresh_rate": "60Hz",
-      "panel_type": "IPS",
-      "response_time": "5ms",
-      "ports": [
-        "USB-C 90W",
-        "HDMI",
-        "DisplayPort",
-        "LAN"
-      ],
-      "features": [
-        "low-blue-light",
-        "flicker-free",
-        "height-adjustable"
-      ]
+    {
+        "id":  "samsung-viewfinity-s8-001",
+        "name":  "Samsung ViewFinity S8 32 inch 4K",
+        "category":  "monitor",
+        "subcategory":  "office",
+        "brand":  "Samsung",
+        "price":  11990000,
+        "original_price":  13990000,
+        "stock":  6,
+        "specs":  {
+                      "screen_size":  "32 inch",
+                      "screen_resolution":  "3840x2160",
+                      "screen_refresh_rate":  "60Hz",
+                      "panel_type":  "IPS",
+                      "response_time":  "5ms",
+                      "ports":  [
+                                    "USB-C 90W",
+                                    "HDMI",
+                                    "DisplayPort",
+                                    "LAN"
+                                ],
+                      "features":  [
+                                       "low-blue-light",
+                                       "flicker-free",
+                                       "height-adjustable"
+                                   ]
+                  },
+        "description":  "Màn hình 4K lớn cho lập trình, tài chính và đa nhiệm nhiều cửa sổ.",
+        "image_url":  "https://example.com/images/samsung-viewfinity-s8.jpg",
+        "warranty_months":  24,
+        "tags":  [
+                     "office",
+                     "4k",
+                     "premium",
+                     "low-blue-light",
+                     "flicker-free"
+                 ],
+        "is_active":  true
     },
-    "description": "M?n h?nh 4K l?n cho l?p tr?nh, t?i ch?nh v? ?a nhi?m nhi?u c?a s?.",
-    "image_url": "https://example.com/images/samsung-viewfinity-s8.jpg",
-    "warranty_months": 24,
-    "tags": [
-      "office",
-      "4k",
-      "premium",
-      "low-blue-light",
-      "flicker-free"
-    ],
-    "is_active": true
-  },
-  {
-    "id": "acer-nitro-vg270-001",
-    "name": "Acer Nitro VG270 M3",
-    "category": "monitor",
-    "subcategory": "gaming",
-    "brand": "Acer",
-    "price": 3790000,
-    "original_price": 4290000,
-    "stock": 13,
-    "specs": {
-      "screen_size": "27 inch",
-      "screen_resolution": "1920x1080",
-      "screen_refresh_rate": "180Hz",
-      "panel_type": "IPS",
-      "response_time": "1ms",
-      "ports": [
-        "HDMI x2",
-        "DisplayPort"
-      ],
-      "features": [
-        "adaptive-sync",
-        "low-blue-light"
-      ]
+    {
+        "id":  "acer-nitro-vg270-001",
+        "name":  "Acer Nitro VG270 M3",
+        "category":  "monitor",
+        "subcategory":  "gaming",
+        "brand":  "Acer",
+        "price":  3790000,
+        "original_price":  4290000,
+        "stock":  13,
+        "specs":  {
+                      "screen_size":  "27 inch",
+                      "screen_resolution":  "1920x1080",
+                      "screen_refresh_rate":  "180Hz",
+                      "panel_type":  "IPS",
+                      "response_time":  "1ms",
+                      "ports":  [
+                                    "HDMI x2",
+                                    "DisplayPort"
+                                ],
+                      "features":  [
+                                       "adaptive-sync",
+                                       "low-blue-light"
+                                   ]
+                  },
+        "description":  "Màn hình gaming 27 inch FHD, dễ lên FPS cao trong eSports.",
+        "image_url":  "https://example.com/images/acer-nitro-vg270-m3.jpg",
+        "warranty_months":  24,
+        "tags":  [
+                     "gaming",
+                     "144hz",
+                     "budget",
+                     "low-blue-light"
+                 ],
+        "is_active":  true
     },
-    "description": "M?n h?nh gaming 27 inch FHD, d? l?n FPS cao trong eSports.",
-    "image_url": "https://example.com/images/acer-nitro-vg270-m3.jpg",
-    "warranty_months": 24,
-    "tags": [
-      "gaming",
-      "144hz",
-      "budget",
-      "low-blue-light"
-    ],
-    "is_active": true
-  },
-  {
-    "id": "dell-u2723qe-001",
-    "name": "Dell UltraSharp U2723QE 27 inch 4K",
-    "category": "monitor",
-    "subcategory": "office",
-    "brand": "Dell",
-    "price": 14990000,
-    "original_price": 16990000,
-    "stock": 2,
-    "specs": {
-      "screen_size": "27 inch",
-      "screen_resolution": "3840x2160",
-      "screen_refresh_rate": "60Hz",
-      "panel_type": "IPS Black",
-      "response_time": "5ms",
-      "ports": [
-        "USB-C 90W",
-        "HDMI",
-        "DisplayPort",
-        "RJ45"
-      ],
-      "features": [
-        "low-blue-light",
-        "flicker-free",
-        "kvm"
-      ]
+    {
+        "id":  "dell-u2723qe-001",
+        "name":  "Dell UltraSharp U2723QE 27 inch 4K",
+        "category":  "monitor",
+        "subcategory":  "office",
+        "brand":  "Dell",
+        "price":  14990000,
+        "original_price":  16990000,
+        "stock":  2,
+        "specs":  {
+                      "screen_size":  "27 inch",
+                      "screen_resolution":  "3840x2160",
+                      "screen_refresh_rate":  "60Hz",
+                      "panel_type":  "IPS Black",
+                      "response_time":  "5ms",
+                      "ports":  [
+                                    "USB-C 90W",
+                                    "HDMI",
+                                    "DisplayPort",
+                                    "RJ45"
+                                ],
+                      "features":  [
+                                       "low-blue-light",
+                                       "flicker-free",
+                                       "kvm"
+                                   ]
+                  },
+        "description":  "Màn hình 4K cao cấp cho văn phòng chuyên nghiệp, màu sắc và kết nối mạnh.",
+        "image_url":  "https://example.com/images/dell-u2723qe.jpg",
+        "warranty_months":  36,
+        "tags":  [
+                     "office",
+                     "4k",
+                     "premium",
+                     "low-blue-light",
+                     "flicker-free"
+                 ],
+        "is_active":  true
     },
-    "description": "M?n h?nh 4K cao c?p cho v?n ph?ng chuy?n nghi?p, m?u s?c v? k?t n?i m?nh.",
-    "image_url": "https://example.com/images/dell-u2723qe.jpg",
-    "warranty_months": 36,
-    "tags": [
-      "office",
-      "4k",
-      "premium",
-      "low-blue-light",
-      "flicker-free"
-    ],
-    "is_active": true
-  },
-  {
-    "id": "logitech-mx-keys-s-001",
-    "name": "Logitech MX Keys S",
-    "category": "keyboard",
-    "subcategory": "wireless",
-    "brand": "Logitech",
-    "price": 2490000,
-    "original_price": 2790000,
-    "stock": 12,
-    "specs": {
-      "type": "keyboard",
-      "connection": "Bluetooth / Logi Bolt",
-      "battery_life": "Up to 10 days with backlight"
+    {
+        "id":  "logitech-mx-keys-s-001",
+        "name":  "Logitech MX Keys S",
+        "category":  "keyboard",
+        "subcategory":  "wireless",
+        "brand":  "Logitech",
+        "price":  2490000,
+        "original_price":  2790000,
+        "stock":  12,
+        "specs":  {
+                      "type":  "keyboard",
+                      "connection":  "Bluetooth / Logi Bolt",
+                      "battery_life":  "Up to 10 days with backlight"
+                  },
+        "description":  "Bàn phím văn phòng cao cấp, gõ êm, kết nối nhiều thiết bị.",
+        "image_url":  "https://example.com/images/logitech-mx-keys-s.jpg",
+        "warranty_months":  12,
+        "tags":  [
+                     "office",
+                     "wireless",
+                     "premium",
+                     "work"
+                 ],
+        "is_active":  true
     },
-    "description": "B?n ph?m v?n ph?ng cao c?p, g? ?m, k?t n?i nhi?u thi?t b?.",
-    "image_url": "https://example.com/images/logitech-mx-keys-s.jpg",
-    "warranty_months": 12,
-    "tags": [
-      "office",
-      "wireless",
-      "premium",
-      "work"
-    ],
-    "is_active": true
-  },
-  {
-    "id": "razer-blackwidow-v4-001",
-    "name": "Razer BlackWidow V4",
-    "category": "keyboard",
-    "subcategory": "mechanical",
-    "brand": "Razer",
-    "price": 2990000,
-    "original_price": 3490000,
-    "stock": 4,
-    "specs": {
-      "type": "keyboard",
-      "connection": "USB-C wired",
-      "switches": "Razer Green Mechanical"
+    {
+        "id":  "razer-blackwidow-v4-001",
+        "name":  "Razer BlackWidow V4",
+        "category":  "keyboard",
+        "subcategory":  "mechanical",
+        "brand":  "Razer",
+        "price":  2990000,
+        "original_price":  3490000,
+        "stock":  4,
+        "specs":  {
+                      "type":  "keyboard",
+                      "connection":  "USB-C wired",
+                      "switches":  "Razer Green Mechanical"
+                  },
+        "description":  "Bàn phím cơ gaming full-size với RGB mạnh và phím macro.",
+        "image_url":  "https://example.com/images/razer-blackwidow-v4.jpg",
+        "warranty_months":  24,
+        "tags":  [
+                     "gaming",
+                     "mechanical",
+                     "rgb",
+                     "premium"
+                 ],
+        "is_active":  true
     },
-    "description": "B?n ph?m c? gaming full-size v?i RGB m?nh v? ph?m macro.",
-    "image_url": "https://example.com/images/razer-blackwidow-v4.jpg",
-    "warranty_months": 24,
-    "tags": [
-      "gaming",
-      "mechanical",
-      "rgb",
-      "premium"
-    ],
-    "is_active": true
-  },
-  {
-    "id": "steelseries-apex-3-tkl-001",
-    "name": "SteelSeries Apex 3 TKL",
-    "category": "keyboard",
-    "subcategory": "gaming",
-    "brand": "SteelSeries",
-    "price": 1290000,
-    "original_price": 1590000,
-    "stock": 9,
-    "specs": {
-      "type": "keyboard",
-      "connection": "USB wired",
-      "switches": "Whisper Quiet Gaming Switch"
+    {
+        "id":  "steelseries-apex-3-tkl-001",
+        "name":  "SteelSeries Apex 3 TKL",
+        "category":  "keyboard",
+        "subcategory":  "gaming",
+        "brand":  "SteelSeries",
+        "price":  1290000,
+        "original_price":  1590000,
+        "stock":  9,
+        "specs":  {
+                      "type":  "keyboard",
+                      "connection":  "USB wired",
+                      "switches":  "Whisper Quiet Gaming Switch"
+                  },
+        "description":  "Bàn phím gaming TKL chống nước nhẹ, phù hợp góc máy gọn.",
+        "image_url":  "https://example.com/images/steelseries-apex-3-tkl.jpg",
+        "warranty_months":  12,
+        "tags":  [
+                     "gaming",
+                     "rgb",
+                     "budget"
+                 ],
+        "is_active":  true
     },
-    "description": "B?n ph?m gaming TKL ch?ng n??c nh?, ph? h?p g?c m?y g?n.",
-    "image_url": "https://example.com/images/steelseries-apex-3-tkl.jpg",
-    "warranty_months": 12,
-    "tags": [
-      "gaming",
-      "rgb",
-      "budget"
-    ],
-    "is_active": true
-  },
-  {
-    "id": "asus-rog-strix-scope-rx-001",
-    "name": "ASUS ROG Strix Scope RX",
-    "category": "keyboard",
-    "subcategory": "mechanical",
-    "brand": "ASUS",
-    "price": 2690000,
-    "original_price": 3190000,
-    "stock": 6,
-    "specs": {
-      "type": "keyboard",
-      "connection": "USB wired",
-      "switches": "ROG RX Optical Mechanical"
+    {
+        "id":  "asus-rog-strix-scope-rx-001",
+        "name":  "ASUS ROG Strix Scope RX",
+        "category":  "keyboard",
+        "subcategory":  "mechanical",
+        "brand":  "ASUS",
+        "price":  2690000,
+        "original_price":  3190000,
+        "stock":  6,
+        "specs":  {
+                      "type":  "keyboard",
+                      "connection":  "USB wired",
+                      "switches":  "ROG RX Optical Mechanical"
+                  },
+        "description":  "Bàn phím cơ optical cho game FPS, phản hồi nhanh và bền.",
+        "image_url":  "https://example.com/images/asus-rog-strix-scope-rx.jpg",
+        "warranty_months":  24,
+        "tags":  [
+                     "gaming",
+                     "mechanical",
+                     "rgb",
+                     "premium"
+                 ],
+        "is_active":  true
     },
-    "description": "B?n ph?m c? optical cho game FPS, ph?n h?i nhanh v? b?n.",
-    "image_url": "https://example.com/images/asus-rog-strix-scope-rx.jpg",
-    "warranty_months": 24,
-    "tags": [
-      "gaming",
-      "mechanical",
-      "rgb",
-      "premium"
-    ],
-    "is_active": true
-  },
-  {
-    "id": "logitech-g-pro-x-tkl-001",
-    "name": "Logitech G Pro X TKL Lightspeed",
-    "category": "keyboard",
-    "subcategory": "wireless",
-    "brand": "Logitech",
-    "price": 2890000,
-    "original_price": 3290000,
-    "stock": 5,
-    "specs": {
-      "type": "keyboard",
-      "connection": "Lightspeed / Bluetooth / USB-C",
-      "switches": "GX Brown Tactile",
-      "battery_life": "Up to 50 hours"
+    {
+        "id":  "logitech-g-pro-x-tkl-001",
+        "name":  "Logitech G Pro X TKL Lightspeed",
+        "category":  "keyboard",
+        "subcategory":  "wireless",
+        "brand":  "Logitech",
+        "price":  2890000,
+        "original_price":  3290000,
+        "stock":  5,
+        "specs":  {
+                      "type":  "keyboard",
+                      "connection":  "Lightspeed / Bluetooth / USB-C",
+                      "switches":  "GX Brown Tactile",
+                      "battery_life":  "Up to 50 hours"
+                  },
+        "description":  "Bàn phím cơ không dây TKL cho eSports, gọn và độ trễ thấp.",
+        "image_url":  "https://example.com/images/logitech-g-pro-x-tkl.jpg",
+        "warranty_months":  24,
+        "tags":  [
+                     "gaming",
+                     "mechanical",
+                     "wireless",
+                     "rgb",
+                     "premium"
+                 ],
+        "is_active":  true
     },
-    "description": "B?n ph?m c? kh?ng d?y TKL cho eSports, g?n v? ?? tr? th?p.",
-    "image_url": "https://example.com/images/logitech-g-pro-x-tkl.jpg",
-    "warranty_months": 24,
-    "tags": [
-      "gaming",
-      "mechanical",
-      "wireless",
-      "rgb",
-      "premium"
-    ],
-    "is_active": true
-  },
-  {
-    "id": "msi-vigor-gk50-001",
-    "name": "MSI Vigor GK50 Low Profile",
-    "category": "keyboard",
-    "subcategory": "mechanical",
-    "brand": "MSI",
-    "price": 1790000,
-    "original_price": 2190000,
-    "stock": 8,
-    "specs": {
-      "type": "keyboard",
-      "connection": "USB wired",
-      "switches": "Low Profile Mechanical"
+    {
+        "id":  "msi-vigor-gk50-001",
+        "name":  "MSI Vigor GK50 Low Profile",
+        "category":  "keyboard",
+        "subcategory":  "mechanical",
+        "brand":  "MSI",
+        "price":  1790000,
+        "original_price":  2190000,
+        "stock":  8,
+        "specs":  {
+                      "type":  "keyboard",
+                      "connection":  "USB wired",
+                      "switches":  "Low Profile Mechanical"
+                  },
+        "description":  "Bàn phím cơ low-profile gõ nhanh, hợp gaming và làm việc.",
+        "image_url":  "https://example.com/images/msi-vigor-gk50.jpg",
+        "warranty_months":  24,
+        "tags":  [
+                     "gaming",
+                     "mechanical",
+                     "rgb",
+                     "budget"
+                 ],
+        "is_active":  true
     },
-    "description": "B?n ph?m c? low-profile g? nhanh, h?p gaming v? l?m vi?c.",
-    "image_url": "https://example.com/images/msi-vigor-gk50.jpg",
-    "warranty_months": 24,
-    "tags": [
-      "gaming",
-      "mechanical",
-      "rgb",
-      "budget"
-    ],
-    "is_active": true
-  },
-  {
-    "id": "dell-km7321w-keyboard-001",
-    "name": "Dell Premier Multi-Device Keyboard",
-    "category": "keyboard",
-    "subcategory": "wireless",
-    "brand": "Dell",
-    "price": 1190000,
-    "original_price": 1390000,
-    "stock": 17,
-    "specs": {
-      "type": "keyboard",
-      "connection": "2.4GHz / Bluetooth",
-      "battery_life": "Up to 36 months"
+    {
+        "id":  "dell-km7321w-keyboard-001",
+        "name":  "Dell Premier Multi-Device Keyboard",
+        "category":  "keyboard",
+        "subcategory":  "wireless",
+        "brand":  "Dell",
+        "price":  1190000,
+        "original_price":  1390000,
+        "stock":  17,
+        "specs":  {
+                      "type":  "keyboard",
+                      "connection":  "2.4GHz / Bluetooth",
+                      "battery_life":  "Up to 36 months"
+                  },
+        "description":  "Bàn phím không dây văn phòng, kết nối đa thiết bị, pin lâu.",
+        "image_url":  "https://example.com/images/dell-premier-keyboard.jpg",
+        "warranty_months":  12,
+        "tags":  [
+                     "office",
+                     "wireless",
+                     "budget",
+                     "work"
+                 ],
+        "is_active":  true
     },
-    "description": "B?n ph?m kh?ng d?y v?n ph?ng, k?t n?i ?a thi?t b?, pin l?u.",
-    "image_url": "https://example.com/images/dell-premier-keyboard.jpg",
-    "warranty_months": 12,
-    "tags": [
-      "office",
-      "wireless",
-      "budget",
-      "work"
-    ],
-    "is_active": true
-  },
-  {
-    "id": "hp-omen-encoder-001",
-    "name": "HP Omen Encoder Keyboard",
-    "category": "keyboard",
-    "subcategory": "mechanical",
-    "brand": "HP",
-    "price": 1590000,
-    "original_price": 1890000,
-    "stock": 0,
-    "specs": {
-      "type": "keyboard",
-      "connection": "USB wired",
-      "switches": "Cherry MX Red"
+    {
+        "id":  "hp-omen-encoder-001",
+        "name":  "HP Omen Encoder Keyboard",
+        "category":  "keyboard",
+        "subcategory":  "mechanical",
+        "brand":  "HP",
+        "price":  1590000,
+        "original_price":  1890000,
+        "stock":  0,
+        "specs":  {
+                      "type":  "keyboard",
+                      "connection":  "USB wired",
+                      "switches":  "Cherry MX Red"
+                  },
+        "description":  "Bàn phím cơ gaming phản hồi nhanh, thiết kế tối giản.",
+        "image_url":  "https://example.com/images/hp-omen-encoder.jpg",
+        "warranty_months":  12,
+        "tags":  [
+                     "gaming",
+                     "mechanical",
+                     "rgb",
+                     "budget"
+                 ],
+        "is_active":  true
     },
-    "description": "B?n ph?m c? gaming ph?n h?i nhanh, thi?t k? t?i gi?n.",
-    "image_url": "https://example.com/images/hp-omen-encoder.jpg",
-    "warranty_months": 12,
-    "tags": [
-      "gaming",
-      "mechanical",
-      "rgb",
-      "budget"
-    ],
-    "is_active": true
-  },
-  {
-    "id": "logitech-g304-001",
-    "name": "Logitech G304 Lightspeed",
-    "category": "mouse",
-    "subcategory": "wireless",
-    "brand": "Logitech",
-    "price": 690000,
-    "original_price": 890000,
-    "stock": 24,
-    "specs": {
-      "type": "mouse",
-      "connection": "Lightspeed wireless",
-      "dpi": "12000",
-      "battery_life": "Up to 250 hours"
+    {
+        "id":  "logitech-g304-001",
+        "name":  "Logitech G304 Lightspeed",
+        "category":  "mouse",
+        "subcategory":  "wireless",
+        "brand":  "Logitech",
+        "price":  690000,
+        "original_price":  890000,
+        "stock":  24,
+        "specs":  {
+                      "type":  "mouse",
+                      "connection":  "Lightspeed wireless",
+                      "dpi":  "12000",
+                      "battery_life":  "Up to 250 hours"
+                  },
+        "description":  "Chuột gaming wireless quốc dân, nhẹ, pin lâu, hợp cả game và văn phòng.",
+        "image_url":  "https://example.com/images/logitech-g304.jpg",
+        "warranty_months":  24,
+        "tags":  [
+                     "gaming",
+                     "wireless",
+                     "budget",
+                     "esports"
+                 ],
+        "is_active":  true
     },
-    "description": "Chu?t gaming wireless qu?c d?n, nh?, pin l?u, h?p c? game v? v?n ph?ng.",
-    "image_url": "https://example.com/images/logitech-g304.jpg",
-    "warranty_months": 24,
-    "tags": [
-      "gaming",
-      "wireless",
-      "budget",
-      "esports"
-    ],
-    "is_active": true
-  },
-  {
-    "id": "logitech-m650-001",
-    "name": "Logitech Signature M650",
-    "category": "mouse",
-    "subcategory": "wireless",
-    "brand": "Logitech",
-    "price": 590000,
-    "original_price": 690000,
-    "stock": 30,
-    "specs": {
-      "type": "mouse",
-      "connection": "Bluetooth / Logi Bolt",
-      "dpi": "4000",
-      "battery_life": "Up to 24 months"
+    {
+        "id":  "logitech-m650-001",
+        "name":  "Logitech Signature M650",
+        "category":  "mouse",
+        "subcategory":  "wireless",
+        "brand":  "Logitech",
+        "price":  590000,
+        "original_price":  690000,
+        "stock":  30,
+        "specs":  {
+                      "type":  "mouse",
+                      "connection":  "Bluetooth / Logi Bolt",
+                      "dpi":  "4000",
+                      "battery_life":  "Up to 24 months"
+                  },
+        "description":  "Chuột wireless văn phòng êm, phù hợp làm việc lâu và không gian yên tĩnh.",
+        "image_url":  "https://example.com/images/logitech-m650.jpg",
+        "warranty_months":  12,
+        "tags":  [
+                     "office",
+                     "wireless",
+                     "budget",
+                     "work"
+                 ],
+        "is_active":  true
     },
-    "description": "Chu?t wireless v?n ph?ng ?m, ph? h?p l?m vi?c l?u v? kh?ng gian y?n t?nh.",
-    "image_url": "https://example.com/images/logitech-m650.jpg",
-    "warranty_months": 12,
-    "tags": [
-      "office",
-      "wireless",
-      "budget",
-      "work"
-    ],
-    "is_active": true
-  },
-  {
-    "id": "razer-deathadder-v3-001",
-    "name": "Razer DeathAdder V3",
-    "category": "mouse",
-    "subcategory": "gaming",
-    "brand": "Razer",
-    "price": 1690000,
-    "original_price": 1990000,
-    "stock": 7,
-    "specs": {
-      "type": "mouse",
-      "connection": "USB wired",
-      "dpi": "30000"
+    {
+        "id":  "razer-deathadder-v3-001",
+        "name":  "Razer DeathAdder V3",
+        "category":  "mouse",
+        "subcategory":  "gaming",
+        "brand":  "Razer",
+        "price":  1690000,
+        "original_price":  1990000,
+        "stock":  7,
+        "specs":  {
+                      "type":  "mouse",
+                      "connection":  "USB wired",
+                      "dpi":  "30000"
+                  },
+        "description":  "Chuột gaming công thái học, cảm biến chính xác cho FPS.",
+        "image_url":  "https://example.com/images/razer-deathadder-v3.jpg",
+        "warranty_months":  24,
+        "tags":  [
+                     "gaming",
+                     "premium",
+                     "esports"
+                 ],
+        "is_active":  true
     },
-    "description": "Chu?t gaming c?ng th?i h?c, c?m bi?n ch?nh x?c cho FPS.",
-    "image_url": "https://example.com/images/razer-deathadder-v3.jpg",
-    "warranty_months": 24,
-    "tags": [
-      "gaming",
-      "premium",
-      "esports"
-    ],
-    "is_active": true
-  },
-  {
-    "id": "steelseries-rival-3-wireless-001",
-    "name": "SteelSeries Rival 3 Wireless",
-    "category": "mouse",
-    "subcategory": "wireless",
-    "brand": "SteelSeries",
-    "price": 990000,
-    "original_price": 1190000,
-    "stock": 9,
-    "specs": {
-      "type": "mouse",
-      "connection": "2.4GHz / Bluetooth",
-      "dpi": "18000",
-      "battery_life": "Up to 400 hours"
+    {
+        "id":  "steelseries-rival-3-wireless-001",
+        "name":  "SteelSeries Rival 3 Wireless",
+        "category":  "mouse",
+        "subcategory":  "wireless",
+        "brand":  "SteelSeries",
+        "price":  990000,
+        "original_price":  1190000,
+        "stock":  9,
+        "specs":  {
+                      "type":  "mouse",
+                      "connection":  "2.4GHz / Bluetooth",
+                      "dpi":  "18000",
+                      "battery_life":  "Up to 400 hours"
+                  },
+        "description":  "Chuột gaming wireless bền, pin lâu, hợp laptop gaming di động.",
+        "image_url":  "https://example.com/images/steelseries-rival-3-wireless.jpg",
+        "warranty_months":  12,
+        "tags":  [
+                     "gaming",
+                     "wireless",
+                     "budget"
+                 ],
+        "is_active":  true
     },
-    "description": "Chu?t gaming wireless b?n, pin l?u, h?p laptop gaming di ??ng.",
-    "image_url": "https://example.com/images/steelseries-rival-3-wireless.jpg",
-    "warranty_months": 12,
-    "tags": [
-      "gaming",
-      "wireless",
-      "budget"
-    ],
-    "is_active": true
-  },
-  {
-    "id": "asus-rog-keris-wireless-001",
-    "name": "ASUS ROG Keris Wireless AimPoint",
-    "category": "mouse",
-    "subcategory": "wireless",
-    "brand": "ASUS",
-    "price": 1890000,
-    "original_price": 2290000,
-    "stock": 4,
-    "specs": {
-      "type": "mouse",
-      "connection": "2.4GHz / Bluetooth / USB-C",
-      "dpi": "36000",
-      "battery_life": "Up to 119 hours"
+    {
+        "id":  "asus-rog-keris-wireless-001",
+        "name":  "ASUS ROG Keris Wireless AimPoint",
+        "category":  "mouse",
+        "subcategory":  "wireless",
+        "brand":  "ASUS",
+        "price":  1890000,
+        "original_price":  2290000,
+        "stock":  4,
+        "specs":  {
+                      "type":  "mouse",
+                      "connection":  "2.4GHz / Bluetooth / USB-C",
+                      "dpi":  "36000",
+                      "battery_life":  "Up to 119 hours"
+                  },
+        "description":  "Chuột gaming không dây nhẹ, switch thay nóng, hợp game FPS.",
+        "image_url":  "https://example.com/images/asus-rog-keris-wireless.jpg",
+        "warranty_months":  24,
+        "tags":  [
+                     "gaming",
+                     "wireless",
+                     "rgb",
+                     "premium",
+                     "esports"
+                 ],
+        "is_active":  true
     },
-    "description": "Chu?t gaming kh?ng d?y nh?, switch thay n?ng, h?p game FPS.",
-    "image_url": "https://example.com/images/asus-rog-keris-wireless.jpg",
-    "warranty_months": 24,
-    "tags": [
-      "gaming",
-      "wireless",
-      "rgb",
-      "premium",
-      "esports"
-    ],
-    "is_active": true
-  },
-  {
-    "id": "dell-ms3320w-001",
-    "name": "Dell Mobile Wireless Mouse MS3320W",
-    "category": "mouse",
-    "subcategory": "wireless",
-    "brand": "Dell",
-    "price": 390000,
-    "original_price": 490000,
-    "stock": 35,
-    "specs": {
-      "type": "mouse",
-      "connection": "Bluetooth / 2.4GHz",
-      "dpi": "1600",
-      "battery_life": "Up to 36 months"
+    {
+        "id":  "dell-ms3320w-001",
+        "name":  "Dell Mobile Wireless Mouse MS3320W",
+        "category":  "mouse",
+        "subcategory":  "wireless",
+        "brand":  "Dell",
+        "price":  390000,
+        "original_price":  490000,
+        "stock":  35,
+        "specs":  {
+                      "type":  "mouse",
+                      "connection":  "Bluetooth / 2.4GHz",
+                      "dpi":  "1600",
+                      "battery_life":  "Up to 36 months"
+                  },
+        "description":  "Chuột wireless nhỏ gọn, giá tốt cho laptop văn phòng.",
+        "image_url":  "https://example.com/images/dell-ms3320w.jpg",
+        "warranty_months":  12,
+        "tags":  [
+                     "office",
+                     "wireless",
+                     "budget",
+                     "portable"
+                 ],
+        "is_active":  true
     },
-    "description": "Chu?t wireless nh? g?n, gi? t?t cho laptop v?n ph?ng.",
-    "image_url": "https://example.com/images/dell-ms3320w.jpg",
-    "warranty_months": 12,
-    "tags": [
-      "office",
-      "wireless",
-      "budget",
-      "portable"
-    ],
-    "is_active": true
-  },
-  {
-    "id": "msi-clutch-gm41-001",
-    "name": "MSI Clutch GM41 Lightweight Wireless",
-    "category": "mouse",
-    "subcategory": "wireless",
-    "brand": "MSI",
-    "price": 1490000,
-    "original_price": 1790000,
-    "stock": 0,
-    "specs": {
-      "type": "mouse",
-      "connection": "2.4GHz / USB-C",
-      "dpi": "20000",
-      "battery_life": "Up to 80 hours"
+    {
+        "id":  "msi-clutch-gm41-001",
+        "name":  "MSI Clutch GM41 Lightweight Wireless",
+        "category":  "mouse",
+        "subcategory":  "wireless",
+        "brand":  "MSI",
+        "price":  1490000,
+        "original_price":  1790000,
+        "stock":  0,
+        "specs":  {
+                      "type":  "mouse",
+                      "connection":  "2.4GHz / USB-C",
+                      "dpi":  "20000",
+                      "battery_life":  "Up to 80 hours"
+                  },
+        "description":  "Chuột gaming wireless nhẹ cho eSports, dock sạc tiện lợi.",
+        "image_url":  "https://example.com/images/msi-clutch-gm41-wireless.jpg",
+        "warranty_months":  24,
+        "tags":  [
+                     "gaming",
+                     "wireless",
+                     "rgb",
+                     "premium"
+                 ],
+        "is_active":  true
     },
-    "description": "Chu?t gaming wireless nh? cho eSports, dock s?c ti?n l?i.",
-    "image_url": "https://example.com/images/msi-clutch-gm41-wireless.jpg",
-    "warranty_months": 24,
-    "tags": [
-      "gaming",
-      "wireless",
-      "rgb",
-      "premium"
-    ],
-    "is_active": true
-  },
-  {
-    "id": "steelseries-arctis-1-wireless-001",
-    "name": "SteelSeries Arctis 1 Wireless",
-    "category": "headset",
-    "subcategory": "wireless",
-    "brand": "SteelSeries",
-    "price": 1990000,
-    "original_price": 2390000,
-    "stock": 6,
-    "specs": {
-      "type": "headset",
-      "connection": "2.4GHz wireless",
-      "driver": "40mm",
-      "battery_life": "Up to 20 hours",
-      "microphone": "Detachable ClearCast microphone"
+    {
+        "id":  "steelseries-arctis-1-wireless-001",
+        "name":  "SteelSeries Arctis 1 Wireless",
+        "category":  "headset",
+        "subcategory":  "wireless",
+        "brand":  "SteelSeries",
+        "price":  1990000,
+        "original_price":  2390000,
+        "stock":  6,
+        "specs":  {
+                      "type":  "headset",
+                      "connection":  "2.4GHz wireless",
+                      "driver":  "40mm",
+                      "battery_life":  "Up to 20 hours",
+                      "microphone":  "Detachable ClearCast microphone"
+                  },
+        "description":  "Tai nghe gaming wireless đa nền tảng, mic tháo rời rõ giọng.",
+        "image_url":  "https://example.com/images/steelseries-arctis-1-wireless.jpg",
+        "warranty_months":  12,
+        "tags":  [
+                     "gaming",
+                     "wireless",
+                     "premium"
+                 ],
+        "is_active":  true
     },
-    "description": "Tai nghe gaming wireless ?a n?n t?ng, mic th?o r?i r? gi?ng.",
-    "image_url": "https://example.com/images/steelseries-arctis-1-wireless.jpg",
-    "warranty_months": 12,
-    "tags": [
-      "gaming",
-      "wireless",
-      "premium"
-    ],
-    "is_active": true
-  },
-  {
-    "id": "razer-blackshark-v2-x-001",
-    "name": "Razer BlackShark V2 X",
-    "category": "headset",
-    "subcategory": "gaming",
-    "brand": "Razer",
-    "price": 1190000,
-    "original_price": 1490000,
-    "stock": 15,
-    "specs": {
-      "type": "headset",
-      "connection": "3.5mm wired",
-      "driver": "50mm",
-      "microphone": "Cardioid microphone"
+    {
+        "id":  "razer-blackshark-v2-x-001",
+        "name":  "Razer BlackShark V2 X",
+        "category":  "headset",
+        "subcategory":  "gaming",
+        "brand":  "Razer",
+        "price":  1190000,
+        "original_price":  1490000,
+        "stock":  15,
+        "specs":  {
+                      "type":  "headset",
+                      "connection":  "3.5mm wired",
+                      "driver":  "50mm",
+                      "microphone":  "Cardioid microphone"
+                  },
+        "description":  "Tai nghe gaming nhẹ, âm trường tốt, hợp FPS và học online.",
+        "image_url":  "https://example.com/images/razer-blackshark-v2-x.jpg",
+        "warranty_months":  24,
+        "tags":  [
+                     "gaming",
+                     "budget",
+                     "esports"
+                 ],
+        "is_active":  true
     },
-    "description": "Tai nghe gaming nh?, ?m tr??ng t?t, h?p FPS v? h?c online.",
-    "image_url": "https://example.com/images/razer-blackshark-v2-x.jpg",
-    "warranty_months": 24,
-    "tags": [
-      "gaming",
-      "budget",
-      "esports"
-    ],
-    "is_active": true
-  },
-  {
-    "id": "logitech-g435-001",
-    "name": "Logitech G435 Lightspeed",
-    "category": "headset",
-    "subcategory": "wireless",
-    "brand": "Logitech",
-    "price": 1290000,
-    "original_price": 1690000,
-    "stock": 10,
-    "specs": {
-      "type": "headset",
-      "connection": "Lightspeed / Bluetooth",
-      "driver": "40mm",
-      "battery_life": "Up to 18 hours",
-      "microphone": "Dual beamforming microphone"
+    {
+        "id":  "logitech-g435-001",
+        "name":  "Logitech G435 Lightspeed",
+        "category":  "headset",
+        "subcategory":  "wireless",
+        "brand":  "Logitech",
+        "price":  1290000,
+        "original_price":  1690000,
+        "stock":  10,
+        "specs":  {
+                      "type":  "headset",
+                      "connection":  "Lightspeed / Bluetooth",
+                      "driver":  "40mm",
+                      "battery_life":  "Up to 18 hours",
+                      "microphone":  "Dual beamforming microphone"
+                  },
+        "description":  "Tai nghe wireless nhẹ, phù hợp laptop, điện thoại và học tập.",
+        "image_url":  "https://example.com/images/logitech-g435.jpg",
+        "warranty_months":  24,
+        "tags":  [
+                     "gaming",
+                     "wireless",
+                     "budget",
+                     "portable"
+                 ],
+        "is_active":  true
     },
-    "description": "Tai nghe wireless nh?, ph? h?p laptop, ?i?n tho?i v? h?c t?p.",
-    "image_url": "https://example.com/images/logitech-g435.jpg",
-    "warranty_months": 24,
-    "tags": [
-      "gaming",
-      "wireless",
-      "budget",
-      "portable"
-    ],
-    "is_active": true
-  },
-  {
-    "id": "asus-tuf-h3-wireless-001",
-    "name": "ASUS TUF Gaming H3 Wireless",
-    "category": "headset",
-    "subcategory": "wireless",
-    "brand": "ASUS",
-    "price": 1790000,
-    "original_price": 2090000,
-    "stock": 3,
-    "specs": {
-      "type": "headset",
-      "connection": "2.4GHz wireless",
-      "driver": "50mm",
-      "battery_life": "Up to 15 hours",
-      "microphone": "Unidirectional boom microphone"
+    {
+        "id":  "asus-tuf-h3-wireless-001",
+        "name":  "ASUS TUF Gaming H3 Wireless",
+        "category":  "headset",
+        "subcategory":  "wireless",
+        "brand":  "ASUS",
+        "price":  1790000,
+        "original_price":  2090000,
+        "stock":  3,
+        "specs":  {
+                      "type":  "headset",
+                      "connection":  "2.4GHz wireless",
+                      "driver":  "50mm",
+                      "battery_life":  "Up to 15 hours",
+                      "microphone":  "Unidirectional boom microphone"
+                  },
+        "description":  "Tai nghe gaming wireless bền, âm bass tốt, hợp chơi game lâu.",
+        "image_url":  "https://example.com/images/asus-tuf-h3-wireless.jpg",
+        "warranty_months":  24,
+        "tags":  [
+                     "gaming",
+                     "wireless",
+                     "premium"
+                 ],
+        "is_active":  true
     },
-    "description": "Tai nghe gaming wireless b?n, ?m bass t?t, h?p ch?i game l?u.",
-    "image_url": "https://example.com/images/asus-tuf-h3-wireless.jpg",
-    "warranty_months": 24,
-    "tags": [
-      "gaming",
-      "wireless",
-      "premium"
-    ],
-    "is_active": true
-  },
-  {
-    "id": "hp-hyperx-cloud-stinger-2-001",
-    "name": "HyperX Cloud Stinger 2",
-    "category": "headset",
-    "subcategory": "gaming",
-    "brand": "HP",
-    "price": 990000,
-    "original_price": 1190000,
-    "stock": 18,
-    "specs": {
-      "type": "headset",
-      "connection": "3.5mm wired",
-      "driver": "50mm",
-      "microphone": "Swivel-to-mute microphone"
-    },
-    "description": "Tai nghe gaming ph? th?ng, ??m ?m, mic ti?n cho voice chat.",
-    "image_url": "https://example.com/images/hyperx-cloud-stinger-2.jpg",
-    "warranty_months": 24,
-    "tags": [
-      "gaming",
-      "budget",
-      "esports"
-    ],
-    "is_active": true
-  }
+    {
+        "id":  "hp-hyperx-cloud-stinger-2-001",
+        "name":  "HyperX Cloud Stinger 2",
+        "category":  "headset",
+        "subcategory":  "gaming",
+        "brand":  "HP",
+        "price":  990000,
+        "original_price":  1190000,
+        "stock":  18,
+        "specs":  {
+                      "type":  "headset",
+                      "connection":  "3.5mm wired",
+                      "driver":  "50mm",
+                      "microphone":  "Swivel-to-mute microphone"
+                  },
+        "description":  "Tai nghe gaming phổ thông, đệm êm, mic tiện cho voice chat.",
+        "image_url":  "https://example.com/images/hyperx-cloud-stinger-2.jpg",
+        "warranty_months":  24,
+        "tags":  [
+                     "gaming",
+                     "budget",
+                     "esports"
+                 ],
+        "is_active":  true
+    }
 ]
