@@ -77,6 +77,8 @@ Resources:
             - Effect: Allow
               Action:
                 - bedrock:InvokeAgent
+                - bedrock:InvokeModel
+                - bedrock:InvokeModelWithResponseStream
               Resource: "*"
       Events:
         Root:

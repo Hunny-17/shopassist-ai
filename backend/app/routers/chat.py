@@ -6,7 +6,7 @@ from uuid import uuid4
 from fastapi import APIRouter, Request
 from fastapi.responses import JSONResponse
 
-from app.agent.bedrock_agent import invoke_agent
+from app.agent.bedrock_agent import get_agent_status, invoke_agent
 from app.db.queries import log_analytics_event, update_chat_session
 from app.models.chat import ChatMessage, ChatRequest
 
@@ -42,6 +42,11 @@ def _is_rate_limited(client_id: str) -> bool:
 
     bucket.append(now)
     return False
+
+
+@router.get("/agent/status")
+async def agent_status():
+    return _success(get_agent_status(), "Agent status loaded")
 
 
 @router.post("/chat")

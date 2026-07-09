@@ -37,6 +37,19 @@ def _has_real_bedrock_config(settings: dict[str, str | None]) -> bool:
     return bool(agent_id and alias_id and not agent_id.startswith("your_") and not alias_id.startswith("your_"))
 
 
+def get_agent_status() -> dict[str, Any]:
+    settings = _bedrock_settings()
+    configured = _has_real_bedrock_config(settings)
+    return {
+        "configured": configured,
+        "aws_region": settings.get("aws_region"),
+        "agent_id_present": bool(settings.get("agent_id")),
+        "agent_alias_id_present": bool(settings.get("agent_alias_id")),
+        "runtime_mode": "bedrock_agent_with_fallback" if configured else "local_fallback",
+        "fallback_ready": True,
+    }
+
+
 async def invoke_agent(session_id: str, message: str) -> dict[str, Any]:
     """
     Invoke AWS Bedrock Agent when configured, otherwise use a clear backend fallback.

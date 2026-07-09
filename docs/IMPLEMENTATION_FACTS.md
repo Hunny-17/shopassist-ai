@@ -125,6 +125,7 @@ Current conclusion:
 - The AWS Bedrock Agent resource exists.
 - Runtime model invocation is currently blocked by AWS account-level access/quota restrictions.
 - The live public demo therefore uses the explicit graceful fallback to Supabase-backed retail tools.
+- The backend includes `/api/v1/agent/status` and `scripts/bedrock_agent_smoke.py` so Bedrock runtime can be verified quickly after AWS approves quota/model access.
 
 ## Demo Data Facts
 

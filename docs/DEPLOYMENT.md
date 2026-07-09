@@ -76,6 +76,20 @@ BedrockKbId
 
 If Bedrock IDs are empty, `/api/v1/chat` still works through the explicit backend fallback. For a full AWS demo, configure the Bedrock Agent and alias. If Bedrock runtime remains blocked by account access or quota, keep the fallback messaging clear in the demo.
 
+Agent runtime status endpoint:
+
+```text
+GET /api/v1/agent/status
+```
+
+When AWS approves Bedrock quota/model access, run the local smoke test from the repository root:
+
+```bash
+python scripts/bedrock_agent_smoke.py --agent-id SR8SCAOB8N --agent-alias-id EOFOCXP1FI --region ap-southeast-1
+```
+
+Expected success output includes `"ok": true`. If the quota is still blocked, the script prints the AWS error without exposing credentials.
+
 ## Supabase
 
 Run the schema in Supabase SQL Editor:

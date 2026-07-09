@@ -215,6 +215,13 @@ Production smoke endpoints:
 ```bash
 curl https://1ldl7jw5ng.execute-api.ap-southeast-1.amazonaws.com/health
 curl https://1ldl7jw5ng.execute-api.ap-southeast-1.amazonaws.com/api/v1/products
+curl https://1ldl7jw5ng.execute-api.ap-southeast-1.amazonaws.com/api/v1/agent/status
+```
+
+Bedrock Agent smoke test after quota/model access is approved:
+
+```bash
+python scripts/bedrock_agent_smoke.py --agent-id SR8SCAOB8N --agent-alias-id EOFOCXP1FI --region ap-southeast-1
 ```
 
 ## Current MVP Scope
