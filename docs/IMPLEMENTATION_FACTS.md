@@ -15,7 +15,7 @@ Use this file as the current-state ledger instead of rewriting those original de
 
 ## Current Product State
 
-Status as of 2026-07-08:
+Status as of 2026-07-09:
 
 - Phase 1 Data: completed
 - Phase 2 Backend Core: completed
@@ -27,6 +27,8 @@ Status as of 2026-07-08:
 - Supabase schema and seed data: completed
 - Bedrock Agent resource setup: completed
 - Live Bedrock model invocation on the current AWS account: blocked by AWS account-level runtime restriction
+- Production UI theme: light retail workspace, blue/white Phong Vu-style palette
+- Agent fallback behavior: intent-routed Supabase tool flow for search, comparison, stock/promotion, and cart intents
 
 ## Public URLs
 
@@ -56,6 +58,7 @@ Observed behavior:
 - `/health` responds successfully from AWS API Gateway.
 - `/api/v1/products` returns Supabase-backed product data.
 - `/api/v1/chat` returns the standard response envelope and structured product-card data.
+- `/api/v1/chat` includes explicit fallback handling for search, comparison, stock/promotion, and cart-style requests when Bedrock runtime is unavailable.
 - The Vercel frontend calls the public AWS API Gateway backend through `VITE_API_URL`.
 - CORS is configured for the deployed frontend.
 
@@ -154,6 +157,7 @@ Current deployed behavior:
 ```text
 Frontend -> AWS API Gateway -> AWS Lambda FastAPI backend
   -> Bedrock Agent wrapper
+  -> intent router / graceful fallback when Bedrock runtime is restricted
   -> Supabase-backed retail tools
   -> Structured UI response with product cards
 ```
@@ -198,4 +202,3 @@ If judges or reviewers need the current factual state, point them to:
 - `docs/AABW_SUBMISSION.md`
 - `docs/DEMO_SCRIPT.md`
 - `docs/IMPLEMENTATION_FACTS.md`
-

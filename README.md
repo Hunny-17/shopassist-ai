@@ -163,6 +163,8 @@ Backend status: Deployed on AWS Lambda + API Gateway through AWS SAM. The public
 
 AWS Bedrock Agent status: a real Bedrock Agent resource and production alias are configured for the backend (`SR8SCAOB8N` / `EOFOCXP1FI`). Current account-level Bedrock runtime access still returns `ValidationException: Operation not allowed` for tested model invocation paths, so the live demo uses the explicit graceful fallback: Supabase-backed retail tools return the same structured chat/product-card response shape.
 
+Current frontend theme: light retail workspace with a blue/white Phong Vu-style palette, chat-first shopping flow, and a right-side recommendation panel with a featured product card.
+
 Deployment notes:
 
 ```text
@@ -223,6 +225,7 @@ Implemented:
 - Supabase seed script
 - FastAPI backend response envelopes
 - Bedrock Agent wrapper with explicit fallback
+- Intent-routed fallback for discovery, comparison, stock/promotion, and cart intents
 - Six agent tools for product search, details, comparison, stock/promotion, recommendations, cart
 - React chat UI with inline product cards
 - Product grid, comparison table, stock badges, cart drawer, mock analytics

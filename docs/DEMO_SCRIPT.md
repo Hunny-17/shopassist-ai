@@ -26,9 +26,9 @@ Say:
 
 Show the interface:
 
-- Dark Phong Vu-style chat UI
-- Split panel on desktop
-- Product area on the right
+- Light retail workspace UI with a blue/white Phong Vu-style palette
+- Split chat and recommendation workspace on desktop
+- Featured recommendation card and product list on the right
 
 ## 0:25-1:10 Flow 1: Intent to Product Cards
 
@@ -45,6 +45,7 @@ Say while the response loads:
 Point out:
 
 - Inline product cards
+- Featured "best match" recommendation in the right panel
 - Price and original price
 - Stock badge
 - Promotion badge if available
@@ -68,7 +69,7 @@ Say:
 
 If the live fallback returns product cards instead of a full comparison table, say:
 
-> In this public MVP run, the response still comes from the same backend response shape. The comparison table renderer is implemented and ready for a Bedrock Agent tool call once account runtime access is fully available.
+> In this public MVP run, comparison also works through the fallback retail tools when Bedrock runtime access is unavailable. The same backend response shape can render a comparison table or product cards depending on the matched products and available structured data.
 
 ## 1:45-2:15 Flow 3: Stock and Promotion
 
@@ -94,7 +95,7 @@ Click "Thêm" on a product card.
 
 Say:
 
-> The cart drawer opens without leaving the chat. For a production Bedrock Agent session, "Lấy cái MSI này đi" can trigger `add_to_cart`, then the agent can suggest a relevant accessory such as a wireless mouse or gaming headset. The upsell is contextual, not spam.
+> The cart drawer opens without leaving the chat. The fallback agent flow can also detect cart-style intent such as "Lấy cái MSI này đi" and return a cart update shape. For a production Bedrock Agent session, the same action group can suggest relevant accessories such as a wireless mouse or gaming headset. The upsell is contextual, not spam.
 
 Show:
 

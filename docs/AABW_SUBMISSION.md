@@ -35,11 +35,12 @@ intent -> tool selection -> Supabase query -> ranked products -> response with p
 The UI renders structured results inside the chat:
 
 - Product cards
+- Featured recommendation card
 - Stock badges
 - Promotion badges
 - Comparison tables
 - Cart drawer
-- Mock analytics panel
+- Light retail workspace layout with right-side recommendations
 
 For the MVP, product and promotion data is demo data seeded into Supabase. The project does not claim a live integration with the real Phong Vu API. In production, the same schema can be fed by a real product catalog API, internal export, or scheduled sync.
 
@@ -123,6 +124,8 @@ Alias ID: EOFOCXP1FI
 Bedrock Agents are responsible for selecting and coordinating tools for product search, detail lookup, comparison, stock/promotion checks, recommendations, and cart actions.
 
 Current runtime note: final CLI tests against Bedrock model invocation still returned account-level restrictions, including `ValidationException: Operation not allowed` for `us.anthropic.claude-3-haiku-20240307-v1:0`. The deployed app therefore uses the explicit graceful fallback to Supabase-backed catalog tools while keeping the same structured product-card response shape.
+
+The fallback is not a static canned response. It routes common retail intents such as discovery, comparison, stock/promotion checks, and cart actions to Supabase-backed tool functions so the public demo remains usable while Bedrock account access is pending.
 
 ### Claude via Amazon Bedrock
 
@@ -253,10 +256,10 @@ Completed:
 - Promotion data
 - Supabase seed script
 - FastAPI backend
-- Bedrock Agent wrapper with explicit fallback
+- Bedrock Agent wrapper with intent-routed explicit fallback
 - Six retail tool functions
-- React chat UI
-- Product cards, stock badges, comparison table, cart drawer
+- React chat UI with light retail workspace theme
+- Product cards, featured recommendation card, stock badges, comparison table, cart drawer
 - Integration smoke test for API response shapes and CORS
 - Public AWS Lambda/API Gateway backend deployment
 - Vercel frontend configured with `VITE_API_URL`
